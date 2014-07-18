@@ -73,9 +73,12 @@ h1, h2, h3, h4 {
   font-size: 0.8em;
 }
 p {
-  line-height: 0.8em;
+  font-size: 0.8em;
+  margin-bottom: 10px;
 }
 h2 {
+  font-size: 2em;
+  margin-top: 10px;
   margin-bottom: 5px;
   padding: 0px;
 }
@@ -117,4 +120,8 @@ a:hover, a.current {
 .list-no-bullets {
   list-style-type: none;
   padding: 5px;
+}
+.img-fullwidth {
+  width: 750px;
+  box-shadow: 3px 3px 3px #777777;
 }
