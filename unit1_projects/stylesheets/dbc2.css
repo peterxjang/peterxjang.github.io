@@ -138,3 +138,7 @@ nav a:hover, nav a:visited, nav a:link, nav a:active{
   padding: 5px;
   text-align: right;
 }
+.img-fullwidth {
+  width: 690px;
+  box-shadow: 3px 3px 3px #777777;
+}
