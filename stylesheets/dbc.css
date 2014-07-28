@@ -46,6 +46,10 @@ body {
 #main-nav {
   display: none;
 }
+@viewport{
+    zoom: 1.0;
+    width: extend-to-zoom;
+}
 @media screen and (min-width: 0px) and (max-width: 900px) { /*medium and small devices */
   body {
     margin: 0 auto;
