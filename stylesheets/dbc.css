@@ -27,7 +27,7 @@ html {
 }
 body {
   max-width: 39%;
-  min-width: 450px;
+  min-width: 350px;
   margin-left: 7%;
 }
 #main-header {
@@ -45,10 +45,6 @@ body {
 }
 #main-nav {
   display: none;
-}
-@viewport{
-    zoom: 1.0;
-    width: extend-to-zoom;
 }
 @media screen and (min-width: 0px) and (max-width: 900px) { /*medium and small devices */
   body {
