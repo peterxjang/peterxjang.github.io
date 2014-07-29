@@ -1,6 +1,13 @@
 /* RESOURCES */
 @import url(http://fonts.googleapis.com/css?family=Shadows+Into+Light);
-
+html { 
+  background: url(../images/8099193955_5fe1914305_o.jpg) no-repeat center center fixed; /* Photo by  Victor Bezrukov: https://www.flickr.com/photos/s-t-r-a-n-g-e/8099193955/*/
+  background-color: #2E3A4A;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 
 /* CSS RESET */
 html, body, form, fieldset, legend { margin: 0; padding: 0; }
@@ -17,14 +24,6 @@ abbr, acronym { border-bottom: .1em dotted; cursor: help; }
 
 
 /* LAYOUT */
-html { 
-  background: url(../images/8099193955_5fe1914305_o.jpg) no-repeat center center fixed; /* Photo by  Victor Bezrukov: https://www.flickr.com/photos/s-t-r-a-n-g-e/8099193955/*/
-  background-color: #2E3A4A;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
 body {
   max-width: 39%;
   min-width: 350px;
