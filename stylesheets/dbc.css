@@ -1,5 +1,7 @@
 /* RESOURCES */
 @import url(http://fonts.googleapis.com/css?family=Shadows+Into+Light);
+@import url(http://fonts.googleapis.com/css?family=Arimo);
+
 html { 
   background: url(../images/8099193955_5fe1914305_o.jpg) no-repeat center center fixed; /* Photo by  Victor Bezrukov: https://www.flickr.com/photos/s-t-r-a-n-g-e/8099193955/*/
   background-color: #2E3A4A;
@@ -25,7 +27,7 @@ abbr, acronym { border-bottom: .1em dotted; cursor: help; }
 
 /* LAYOUT */
 body {
-  max-width: 39%;
+  max-width: 41%;
   min-width: 350px;
   margin-left: 7%;
 }
@@ -33,7 +35,6 @@ body {
   position: fixed;
   top: 30px;
   right: 0%;
-  z-index: 10;
 }
 #main-header-nav {
   position: relative;
@@ -68,7 +69,7 @@ body {
   font-family: "Century Gothic", "Verdana", sans-serif;
 }
 main p {
-  font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+  font-family: "Arimo", sans-serif;
 }
 #main-header-nav a, #main-header-nav-selected {
   padding: 0.4em;
@@ -78,7 +79,7 @@ main p {
     text-decoration: none;
 }
 code {
-  font-size: 1.2em;
+  font-size: 1.1em;
   font-weight: bold;
 }
 .list-no-bullets {
@@ -100,8 +101,13 @@ footer {
   padding-right: 3%;
   text-align: right;
 }
-p, ul, ol {
+p {
   margin-bottom: 1em;
+  font-size: 1.0em;
+}
+ul, ol {
+  margin-bottom: 1em;
+  font-size: 1.1em;
 }
 main header {
   padding-bottom: 1em;
@@ -138,8 +144,11 @@ body {
 #main-header-nav-selected {
   background-color: black;
 }
+a {
+  color: #44f;
+}
 a:visited {
-  color: #77f;
+  color: #99f;
 }
 code {
   color: #008099;
@@ -151,3 +160,9 @@ footer {
   color: white;
 }
 
+
+@media screen and (min-width: 0px) and (max-width: 900px) { /*medium and small devices */
+  #main-header {
+    background-color: #151515;
+  }
+}
