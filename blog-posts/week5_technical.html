@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Peter Jang's DBC Portfolio</title>
+	<link rel="stylesheet" href="../stylesheets/dbc.css" />
+	<meta name="viewport" content="initial-scale=1">
+</head>
+<body>
+	<header id="main-header">
+		<h1>peter jang's <span id="dbc">dbc portfolio</span></h1>
+		<h3>my online portfolio of dev bootcamp work</h3>
+		<nav>
+			<ul id="main-header-nav">
+				<li><a href="../">HOME</a></li>
+				<li id="main-header-nav-selected">BLOG</li>
+				<li><a href="../assignments.html">ASSIGNMENTS</a></li>
+				<li><a href="../about.html">ABOUT</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div id="column-container">
+		<nav id="main-nav">
+			<ul>
+				<li><a href="../">HOME</a></li>
+				<li><a href="../blog.html">BLOG</a></li>
+				<li><a href="../assignments.html">ASSIGNMENTS</a></li>
+				<li><a href="../about.html">ABOUT</a></li>
+			</ul>
+		</nav>
+		<main>
+			<article>
+				<header>
+					<h2>The birthplace of Ruby classes</h2>
+					<time>2014-15-8</time>
+				</header>
+				<p>If you're a beginner to programming, learning how to use Ruby classes isn't too difficult from a technical perspective. But it's pretty bizarre from a conceptual standpoint. Where did it come from? Why should I use it? The answers are fairly intuitive to experienced programmers. It's much more intuitive to a person who understands the history of how languages were developed. So let's go over that history briefly. <em>Disclaimer: this isn't a comprehensive history of all languages, it's a simple perspective that highlights how classes and objects fulfilled a need that was missing over time.</em></p>
+				<p>So let's start our history with the assembly language. Assembly is a low-level language, which means that a computer can run its instructions directly. In other words, a high level language like Ruby needs to be translated into a low level language like assembly in order to even run. Which means low level languages are always going to be faster. But it's so, so painful to write. Here's an <a href="http://www.csi.ucd.ie/staff/jcarthy/home/alp/alp5.html" target="_blank">example assembly code</a> that asks a user for the name of a color and prints it back out with a message:</p>
+				<pre><code>
+; colour.asm: Prompt user to enter a colour and display a message
+; Author: Joe Carthy
+; Date: March 1994
+.model small
+.stack 256
+CR equ 13d
+LF equ 10d
+; string definitions: note 0 terminator
+.data
+msg1 db 'Enter your favourite colour: ', 0
+msg2 db CR, LF,'Yuk ! I hate ', 0
+colour db 80 dup (0)
+.code
+start:
+mov ax, @data
+mov ds, ax
+mov ax, offset msg1
+call put_str ; display prompt
+mov ax, offset colour
+call get_str ; read colour
+mov ax, offset msg2
+call put_str ; display msg2
+mov ax, offset colour
+call put_str ; display colour entered by user
+mov ax, 4c00h
+int 21h ; finished, back to dos
+
+put_str: ; display string terminated by 0
+; whose address is in ax
+push ax ; save registers
+push bx
+push cx
+push dx
+mov bx, ax ; store address in bx
+mov al, byte ptr [bx] ; al = first char in string
+put_loop: cmp al, 0 ; al == 0 ?
+je put_fin ; while al != 0
+call putc ; display character
+inc bx ; bx = bx + 1
+mov al, byte ptr [bx] ; al = next char in string
+jmp put_loop ; repeat loop test
+put_fin:
+pop dx ; restore registers
+pop cx
+pop bx
+pop ax
+ret
+
+get_str: ; read string terminated by CR into array
+; whose address is in ax
+push ax ; save registers
+push bx
+push cx
+push dx
+mov bx, ax
+call getc ; read first character
+mov byte ptr [bx], al ; In C: str[i] = al
+get_loop: cmp al, 13 ; al == CR ?
+je get_fin ;while al != CR
+inc bx ; bx = bx + 1
+call getc ; read next character
+mov byte ptr [bx], al ; In C: str[i] = al
+jmp get_loop ; repeat loop test
+get_fin: mov byte ptr [bx], 0 ; terminate string with 0
+pop dx ; restore registers
+pop cx
+pop bx
+pop ax
+ret
+
+putc: ; display character in al
+push ax ; save ax
+push bx ; save bx
+push cx ; save cx
+push dx ; save dx
+mov dl, al
+mov ah, 2h
+int 21h
+pop dx ; restore dx
+pop cx ; restore cx
+pop bx ; restore bx
+pop ax ; restore ax
+ret
+getc: ; read character into al
+push bx ; save bx
+push cx ; save cx
+push dx ; save dx
+mov ah, 1h
+int 21h
+pop dx ; restore dx
+pop cx ; restore cx
+pop bx ; restore bx
+ret
+end start
+				</code></pre>
+				<p>Ouch! Remember, the only thing this program is doing is reading in a string and creating an output. The reason it's so long is because assembly requires instructions for every detail the machine has to carry out, like identifying specific spaces for every piece of information you have to store. And keep in mind, assembly languages are different for each type of hardware - the above code will only work on one type of machine. Not fun.</p>
+				<p>So next came high level languages. High level languages allow you to write code without worrying about all those machine specifics. A high level language can run on different machines by translating the code into a low level language. This is called compiling. High level languages are slower than low level languages, but not by so much that it would stop you from using it. It's much easier to write code in a high level language. Back in the day, the major high level language was C. Here's a similar example of reading in a string and outputting a message <a href="http://www.tutorialspoint.com/cprogramming/c_input_output.htm" target="_blank">written in C</a>:</p>
+				<pre><code>
+#include &lt;stdio.h&gt;
+int main( )
+{
+ char str[100];
+ int i;
+
+ printf( "Enter a value :");
+ scanf("%s %d", str, &amp;i);
+
+ printf( "\nYou entered: %s %d ", str, i);
+
+ return 0;
+}
+				</code></pre>
+				<p>Whew, much better than writing assembly! If you look at the code, the basic structure is pretty similar to Ruby. You declare variables, you call functions, you return outputs, etc. And C has data types that are familiar to Ruby programmers - integers, floats, strings, even arrays. And C had something called structures. Structures provided a way to store multiple pieces of data in one variable. It looked like this:</p>
+				<pre><code>
+struct birthday
+{
+  char name[20];
+  int day;
+  int month;
+  int year;
+};
+				</code></pre>
+				<p>Looks a lot like a Ruby class, no? Well, this is where it started from - a need to organize multiple pieces of data into a single variable. So what came next is now easy to see - a structure contains different data, but there's also a need to associate functions that it is able to do. There was no way to accomplish this within the C language, so a new language was developed, called C++. <em>(The name is a clever reference to the ++ operator in C, where writing <code>i++</code> is the same thing as writing <code>i=i+1</code>. Actually, the original name for C++ was "C with Classes".)</em> In C++, you had new and improved structures called classes. A class can contain both data and functions associated with the class, called methods. Here's a <a href="http://www.tutorialspoint.com/cprogramming/c_input_output.htm" target="_blank">complete example</a> of a C++ class in use:</p>
+				<pre><code>
+// example: one class, two objects
+#include &lt;iostream&gt;
+using namespace std;
+
+class Rectangle {
+    int width, height;
+  public:
+    void set_values (int,int);
+    int area () {return width*height;}
+};
+
+void Rectangle::set_values (int x, int y) {
+  width = x;
+  height = y;
+}
+
+int main () {
+  Rectangle rect, rectb;
+  rect.set_values (3,4);
+  rectb.set_values (5,6);
+  cout &lt;&lt; "rect area: " &lt;&lt; rect.area() &lt;&lt; endl;
+  cout &lt;&lt; "rectb area: " &lt;&lt; rectb.area() &lt;&lt; endl;
+  return 0;
+}
+				</code></pre>
+				<p>Some weird syntax, but again, the basic structure is very similar to Ruby code. Now, it's hard to understand at first, but this changes everything. Classes provide the foundation of what we call object oriented programming. An object is an instance of a class; object oriented programming is programming that centers around the use of objects. When you're first learning how to program, you probably won't be writing classes that often. But in an object oriented programming language like Ruby, you use classes all the time. Pretty much everything in Ruby is an object - integers, strings, arrays, everthing. If you were creating an array using an older language like C, the array does not know its own length since it's not an object, so it must be calculated every time. Instead of being able to write something like <code>my_array.length</code>, you would write something like <code>sizeof(my_array)/sizeof(my_array[0])</code>, where the sizeof function tells you how many bytes a variable is using. Ultimately it's not much different, but as you can see, object oriented programming produces more readable and intuitive code. Again, when you're first writing programs, you won't need to write a lot of classes, but when you later are writing larger and more complex code, classes create an intuitive and efficient way to organize and store information.</p>
+				<p>So hopefully reading this gives you a sense of where Ruby classes come from. They're built upon a history of the development of programming languages over the past several decades. Learning how to think of programming with an object oriented perspective is one of the key skills of a modern programmer. It's almost exactly like <a href="http://www.youtube.com/watch?v=3vAnuBtyEYE" target="_blank">this scene</a> in The Matrix where they're discussing the way the code looks. As you learn programming, there will be a day when you no longer simply see characters on the screen, but you see objects interacting over space and time. That's when the fun truly begins.</p>
+			</article>
+			<br /><a href="../blog.html">Back to all blog posts</a>
+		</main>
+	</div>
+	<footer id="main-footer">
+		<p>2014 Peter Jang</p>
+	</footer>
+</body>
+</HTML>
