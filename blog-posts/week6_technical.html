@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Peter Jang's DBC Portfolio</title>
+	<link rel="stylesheet" href="../stylesheets/dbc.css" />
+	<meta name="viewport" content="initial-scale=1">
+</head>
+<body>
+	<header id="main-header">
+		<h1>peter jang's <span id="dbc">dbc portfolio</span></h1>
+		<h3>my online portfolio of dev bootcamp work</h3>
+		<nav>
+			<ul id="main-header-nav">
+				<li><a href="../">HOME</a></li>
+				<li id="main-header-nav-selected">BLOG</li>
+				<li><a href="../assignments.html">ASSIGNMENTS</a></li>
+				<li><a href="../about.html">ABOUT</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div id="column-container">
+		<nav id="main-nav">
+			<ul>
+				<li><a href="../">HOME</a></li>
+				<li><a href="../blog.html">BLOG</a></li>
+				<li><a href="../assignments.html">ASSIGNMENTS</a></li>
+				<li><a href="../about.html">ABOUT</a></li>
+			</ul>
+		</nav>
+		<main>
+			<article>
+				<header>
+					<h2>Ruby blocks, procs, and lambdas</h2>
+					<time>2014-20-8</time>
+				</header>
+				<p>Blocks, procs, and lambdas are pretty confusing things, mostly because they're so similar to each other. All of them are very similar to functions. So let's start there, and break down each of these things one at a time.</p>
+				<ul>
+					<li><h3>What's a function?</h3></li>
+					<p>A function is one or more lines of code that you want to reuse. In Ruby it looks like:</p>
+					<code><pre>
+def triple(num)
+  return num * 3
+
+x = 5
+triple(x) #=> 15
+					</pre></code>
+					<p>To use a function, you need to choose a name for the function, and you need to specify what information it takes in. Which is pretty simple, but in some way, blocks, procs, and lambdas were designed to make it even simpler for certain situations.</p>
+					<li><h3>What's a block?</h3></li>
+					<p>It's like a function, except it doesn't need arguments declared the same way as a function. A block can use any variables that were defined when it was made. So why do you need it? In a nutshell - what if you had a function that needed a function as an argument? An example would be the map method for enumerables. It's going to do something to each element, but it doesn't know what. Unfortunately, you can't pass a function as an argument in Ruby. Fortunately, you can pass a block as an argument - that's what they were made for. In the example below, everything inside the curly brackets is a block:</p>
+					<code><pre>
+numbers = [3, 4, 7]
+numbers.map { |x| x * 3 } #=> [9, 12, 21]
+					</pre></code>
+					<p>The key thing to understand is that instead of taking in one or more variables, map takes in a block as its input. Map is going to do something to each element of numbers, but it doesn't know what by itself. The block tells it what it's going to do. The block doesn't need a name or arguments like a function, it just does the block of code as it's written.</p>
+					<li><h3>What's a procedure?</h3></li>
+					<p>It's a block that you want to reuse. A block is created as an object, so it can be given a name and have methods attached to it. The above example can be rewritten using a procedure like this:</p>
+					<code><pre>
+numbers = [3, 4, 7]
+triple = proc { |x| x * 3 }
+numbers.map(&amp;triple) #=> [9, 12, 21]
+					</pre></code>
+					<p>As before, map needs to take in a block of code to execute, we just defined it above and named it triple. Now we can call it up using <code>&amp;triple</code> and reuse it. So now you can reuse your block like a function. And unlike a function, a procedure can be passed in as an argument to a function or method like map. Which is nice.</p>
+					<li><h3>What's a lambda?</h3></li>
+					<p>Almost identical to a procedure, the difference is the way it treats arguments and the return statement. Really, that's it - lamdbas and procedures both show up in Ruby as type Proc. Lambdas raise an error with incorrect arguments while procedures don't, and lambdas treat the return statement as a way to exit the lambda while procedures treat a return statement as part of the code that it's in. The example can be rewritten using a lambda like this:</p>
+					<code><pre>
+numbers = [3, 4, 7]
+triple = lambda { |x| x * 3 }
+numbers.map(&amp;triple) #=> [9, 12, 21]
+					</pre></code>
+					<p>Again, this lambda example works exactly the same as the procedure example. You won't notice a difference between procedures and lambdas unless you're dealing with issues about number of arguments or return statements.</p>
+					<p>So there's a brief rundown on blocks, procedures, and lambdas. Hopefully it's clear that they all operate in a way that's pretty similar to functions. Understanding how they work from reading code is absolutely essential to being a Ruby programmer, because they are one of the fundamental pieces of what makes Ruby unique and effective at what it does.<p> 
+				</ul>
+			</article>
+			<br /><a href="../blog.html">Back to all blog posts</a>
+		</main>
+	</div>
+	<footer id="main-footer">
+		<p>2014 Peter Jang</p>
+	</footer>
+</body>
+</HTML>
