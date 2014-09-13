@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Looping in Ruby and JavaScript</title>
+	<link rel="stylesheet" href="stylesheets/unit3_cheatsheet.css" />
+	<meta name="viewport" content="initial-scale=1">
+</head>
+<body>
+	<div id="column-container">
+		<main>
+			<h2>Looping in Ruby and JavaScript</h2>
+			<p>This is a comparison between looping in Ruby and JavaScript. First let's go over JavaScript, because it's in some sense simpler with fewer options.</p>
+			<h3>JavaScript: for</h3>
+			<code>
+				for (var i=0; i<10; i++) {<br/>
+					&nbsp;&nbsp;console.log(i);<br/>
+				}
+			</code>
+			<h3>JavaScript: while</h3>
+			<code>
+				var i = 0;<br/>
+				while (i<10) {<br/>
+					&nbsp;&nbsp;console.log(i);<br/>
+					&nbsp;&nbsp;i++;<br/>
+				}
+			</code>
+			<h3>JavaScript: for in</h3>
+			<code>
+				var obj = {a:1, b:2, c:3};<br/>
+				for (var prop in obj) {<br/>
+					&nbsp;&nbsp;console.log(obj[prop]);<br/>
+				}
+			</code>
+			<p>Now let's look over the different loops Ruby has to offer. The fundamental difference is that JavaScript isn't designed to loop over objects, whereas Ruby can nothing but loop over objects.<p>
+			<h3>Ruby: for in</h3>
+			<code>
+				for i in 0...10<br/>
+					&nbsp;&nbsp;puts i<br/>
+				end
+			</code>
+			<h3>Ruby: each</h3>
+			<code>
+				(0...10).each do |i|<br/>
+					&nbsp;&nbsp;puts i<br/>
+				end
+			</code>
+			<h3>Ruby: while</h3>
+			<code>
+				i = 0<br/>
+				while i &lt; 10 do {<br/>
+					&nbsp;&nbsp;puts i<br/>
+					&nbsp;&nbsp;i += 1<br/>
+				end
+			</code>
+			<h3>Ruby: until</h3>
+			<code>
+				i = 0<br/>
+				until i &gt;= 10 do {<br/>
+					&nbsp;&nbsp;puts i<br/>
+					&nbsp;&nbsp;i += 1<br/>
+				end
+			</code>
+			<p>Besides these basic loops, Ruby provides multiple methods for enumerables, like the each method. These methods allow you to modify, group, or create new enumerables using a method instead of writing out a complete loop structure.</p>
+		</main>
+	</div>
+	<footer id="main-footer">
+		<p>2014 Peter Jang</p>
+	</footer>
+</body>
+</HTML>
