@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html ⚡ lang="en">
+  <head>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700' rel='stylesheet' type='text/css'>
+  <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,minimum-scale=1">
+
+  <title>My New Post</title>
+  <meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit!">
+
+  <link rel="canonical" href="http://peterxjang.com/blog/2016/03/13/my-new-post.html">
+  <link rel="alternate" type="application/rss+xml" title="Peter X Jang" href="http://peterxjang.com/blog/feed.xml">
+
+  <script type="application/ld+json">
+  
+{
+  "@context": "http://schema.org",
+  "@type": "NewsArticle",
+  "mainEntityOfPage": "http://peterxjang.com/blog/2016/03/13/my-new-post.html",
+  "headline": "My New Post",
+  "datePublished": "2016-03-13T00:00:00-06:00",
+  "dateModified": "2016-03-13T00:00:00-06:00",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit!",
+  "author": {
+    "@type": "Person",
+    "name": "Peter Jang"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Peter X Jang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://peterxjang.com/blog/assets/images/logo.jpg",
+      "width": 60,
+      "height": 60
+    }
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "http://peterxjang.com/blog/assets/images/logo.jpg",
+    "height": 60,
+    "width": 60
+  }
+}
+
+  </script>
+  
+  <style amp-custom>
+  
+  /**
+ * Syntax highlighting styles
+ */
+.highlight {
+  background: #fff; }
+  .highlighter-rouge .highlight {
+    background: #eef; }
+  .highlight .c {
+    color: #998;
+    font-style: italic; }
+  .highlight .err {
+    color: #a61717;
+    background-color: #e3d2d2; }
+  .highlight .k {
+    font-weight: bold; }
+  .highlight .o {
+    font-weight: bold; }
+  .highlight .cm {
+    color: #998;
+    font-style: italic; }
+  .highlight .cp {
+    color: #999;
+    font-weight: bold; }
+  .highlight .c1 {
+    color: #998;
+    font-style: italic; }
+  .highlight .cs {
+    color: #999;
+    font-weight: bold;
+    font-style: italic; }
+  .highlight .gd {
+    color: #000;
+    background-color: #fdd; }
+  .highlight .gd .x {
+    color: #000;
+    background-color: #faa; }
+  .highlight .ge {
+    font-style: italic; }
+  .highlight .gr {
+    color: #a00; }
+  .highlight .gh {
+    color: #999; }
+  .highlight .gi {
+    color: #000;
+    background-color: #dfd; }
+  .highlight .gi .x {
+    color: #000;
+    background-color: #afa; }
+  .highlight .go {
+    color: #888; }
+  .highlight .gp {
+    color: #555; }
+  .highlight .gs {
+    font-weight: bold; }
+  .highlight .gu {
+    color: #aaa; }
+  .highlight .gt {
+    color: #a00; }
+  .highlight .kc {
+    font-weight: bold; }
+  .highlight .kd {
+    font-weight: bold; }
+  .highlight .kp {
+    font-weight: bold; }
+  .highlight .kr {
+    font-weight: bold; }
+  .highlight .kt {
+    color: #458;
+    font-weight: bold; }
+  .highlight .m {
+    color: #099; }
+  .highlight .s {
+    color: #d14; }
+  .highlight .na {
+    color: #008080; }
+  .highlight .nb {
+    color: #0086B3; }
+  .highlight .nc {
+    color: #458;
+    font-weight: bold; }
+  .highlight .no {
+    color: #008080; }
+  .highlight .ni {
+    color: #800080; }
+  .highlight .ne {
+    color: #900;
+    font-weight: bold; }
+  .highlight .nf {
+    color: #900;
+    font-weight: bold; }
+  .highlight .nn {
+    color: #555; }
+  .highlight .nt {
+    color: #000080; }
+  .highlight .nv {
+    color: #008080; }
+  .highlight .ow {
+    font-weight: bold; }
+  .highlight .w {
+    color: #bbb; }
+  .highlight .mf {
+    color: #099; }
+  .highlight .mh {
+    color: #099; }
+  .highlight .mi {
+    color: #099; }
+  .highlight .mo {
+    color: #099; }
+  .highlight .sb {
+    color: #d14; }
+  .highlight .sc {
+    color: #d14; }
+  .highlight .sd {
+    color: #d14; }
+  .highlight .s2 {
+    color: #d14; }
+  .highlight .se {
+    color: #d14; }
+  .highlight .sh {
+    color: #d14; }
+  .highlight .si {
+    color: #d14; }
+  .highlight .sx {
+    color: #d14; }
+  .highlight .sr {
+    color: #009926; }
+  .highlight .s1 {
+    color: #d14; }
+  .highlight .ss {
+    color: #990073; }
+  .highlight .bp {
+    color: #999; }
+  .highlight .vc {
+    color: #008080; }
+  .highlight .vg {
+    color: #008080; }
+  .highlight .vi {
+    color: #008080; }
+  .highlight .il {
+    color: #099; }
+
+.icon > svg {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  vertical-align: middle; }
+  .icon > svg path {
+    fill: #828282; }
+
+amp-img {
+  background-color: grey; }
+
+.cf:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+main {
+  display: block; }
+
+body {
+  font-family: "Helvetica Neue", "Open Sans", Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-feature-settings: "liga=1, dlig=1";
+  -ms-font-feature-settings: "liga", "dlig";
+  -webkit-font-feature-settings: "liga", "dlig";
+  -o-font-feature-settings: "liga", "dlig";
+  font-feature-settings: "liga", "dlig"; }
+
+.site-header {
+  position: relative;
+  width: 100%;
+  max-width: 700px;
+  margin: 16px auto 0 auto;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+  @media only screen and (max-width: 800px) {
+    .site-header {
+      padding: 0 16px; } }
+  .site-header .page-links {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 16px;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 30px; }
+    .site-header .page-links a {
+      text-decoration: none;
+      color: #999999; }
+      .site-header .page-links a:hover {
+        color: #333333; }
+
+.blog-header {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  position: relative;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+  .blog-header .blog-title {
+    margin-bottom: 8px;
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: -2px;
+    outline: 0;
+    line-height: 50px;
+    word-break: break-word;
+    color: #333333; }
+  .blog-header .blog-description {
+    font-size: 28px;
+    margin: 0 0 20px;
+    padding: 0;
+    line-height: 1.2;
+    color: #666666;
+    font-weight: 300; }
+
+.content {
+  width: 100%;
+  max-width: 700px;
+  margin: 25px auto 0 auto;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+  @media only screen and (max-width: 800px) {
+    .content {
+      padding: 0 16px; } }
+  .content article {
+    padding: 20px 0;
+    border-bottom: 1px solid #f2f2f0; }
+    .content article:last-child {
+      border-bottom: 0px; }
+    .content article .post-title {
+      letter-spacing: -0.02em;
+      font-weight: 700;
+      font-style: normal;
+      display: block;
+      font-size: 36px;
+      line-height: 1.15;
+      margin: 0 0; }
+      .content article .post-title a {
+        text-decoration: none;
+        color: #333332; }
+        .content article .post-title a:hover {
+          text-decoration: none; }
+    .content article .post-excerpt {
+      letter-spacing: -0.02em;
+      font-weight: 300;
+      font-style: normal;
+      font-size: 20px;
+      line-height: 1.59;
+      color: #666665; }
+    .content article .post-meta {
+      font-size: 14px;
+      color: #b3b3b1;
+      line-height: 30px; }
+      .content article .post-meta a {
+        color: #b3b3b1;
+        text-decoration: none; }
+        .content article .post-meta a:hover {
+          text-decoration: underline; }
+
+.post-template .content {
+  max-width: 700px; }
+
+.index-headline {
+  border-top: 1px solid #dededc;
+  margin: 0;
+  padding: 16px 0; }
+  .index-headline span {
+    color: #b3b3b1;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px; }
+
+.pagination {
+  text-align: center;
+  padding: 16px 0 0;
+  font-size: 12px; }
+  .pagination a {
+    color: #999999;
+    text-decoration: none; }
+    .pagination a:hover {
+      color: #333333; }
+
+.site-footer {
+  margin: 0 auto;
+  padding: 48px 0;
+  width: 100%;
+  max-width: 700px;
+  font-size: 12px;
+  text-align: center;
+  color: #999999;
+  line-height: 17.6px; }
+  .site-footer a {
+    color: #666666;
+    text-decoration: none; }
+    .site-footer a:hover {
+      color: #333333; }
+
+.post .post-meta {
+  font-family: "Helvetica Neue", "Open Sans", Arial, Helvetica, sans-serif; }
+.post .post-title {
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: -0.04em;
+  font-size: 50px;
+  line-height: 1.1;
+  color: #333332;
+  margin-bottom: 50px; }
+.post .author-image {
+  background-image: url(/blog/assets/images/author.jpg);
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  margin-right: 8px;
+  margin-bottom: -10px;
+  float: left;
+  background-size: cover;
+  border-radius: 100%;
+  text-indent: -9999px; }
+.post .post-meta-text {
+  color: #b3b3b1;
+  letter-spacing: -0.02em;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  overflow: hidden;
+  font-family: "Helvetica Neue", "Open Sans", Arial, Helvetica, sans-serif;
+  white-space: nowrap;
+  text-overflow: ellipsis; }
+.post .post-content {
+  width: 100%;
+  font-family: Georgia, Cambria, "Times New Roman", Times, "Lora", serif;
+  color: #333333; }
+  .post .post-content h1, .post .post-content h2, .post .post-content h3 {
+    font-family: "Helvetica Neue", "Open Sans", Arial, Helvetica, sans-serif; }
+  .post .post-content h3, .post .post-content h4, .post .post-content h5, .post .post-content h6 {
+    letter-spacing: -0.02em;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1.3;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    font-family: "Helvetica Neue", "Open Sans", Arial, Helvetica, sans-serif; }
+  .post .post-content h3 {
+    font-size: 36px; }
+  .post .post-content h2, .post .post-content h1 {
+    letter-spacing: -0.02em;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 42px;
+    line-height: 1.2;
+    margin-top: 50px;
+    margin-bottom: 0px; }
+  .post .post-content p {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 22px;
+    line-height: 1.59;
+    letter-spacing: -.002em;
+    margin-top: 30px;
+    margin-bottom: 0;
+    color: #333333;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto; }
+  .post .post-content a {
+    color: #333333;
+    text-decoration: underline; }
+  .post .post-content amp-img, .post .post-content amp-youtube {
+    margin-top: 30px; }
+  .post .post-content figure {
+    margin: 0;
+    padding: 0 0 30px; }
+  .post .post-content figcaption {
+    font-weight: 400;
+    font-style: italic;
+    font-size: 16px;
+    line-height: 1.3;
+    color: #666665;
+    outline: 0;
+    z-index: 300;
+    text-align: center; }
+  .post .post-content hr {
+    border: 0;
+    padding: 0;
+    display: block;
+    width: 15%;
+    margin: 30px auto;
+    border: 0px solid #dddddd;
+    border-top: 1px solid #dddddd; }
+  .post .post-content blockquote {
+    margin: 0 0 30px;
+    margin-left: -26px;
+    border-left: 3px solid #57ad68;
+    padding-left: 20px; }
+    .post .post-content blockquote p {
+      letter-spacing: 0.01rem;
+      font-weight: 400;
+      mborder-left: 3px solid #57ad68;
+      mpadding-left: 20px;
+      mmargin-left: -26px;
+      padding-bottom: 3px; }
+  .post .post-content ul, .post .post-content ol {
+    padding: 0 0 30px;
+    margin: 0; }
+  .post .post-content li {
+    padding: 0;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 23px;
+    line-height: 30px;
+    margin-left: 30px;
+    margin-bottom: 12px;
+    padding-top: 2px; }
+    .post .post-content li p {
+      padding: 0 0 1.618rem; }
+  .post .post-content ol li {
+    list-style-type: decimal; }
+.post .bottom-teaser {
+  padding: 50px 0 0 0;
+  font-family: "Helvetica Neue", "Open Sans", Arial, Helvetica, sans-serif; }
+  .post .bottom-teaser hr {
+    border: 0;
+    padding: 0;
+    display: block;
+    width: 15%;
+    margin: 16px 0 16px 100px;
+    border: 0px solid #dddddd;
+    border-top: 1px solid #dddddd; }
+  .post .bottom-teaser .isLeft {
+    float: left;
+    width: 47%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+    @media only screen and (max-width: 800px) {
+      .post .bottom-teaser .isLeft {
+        width: 100%;
+        padding-bottom: 32px; } }
+    .post .bottom-teaser .isLeft .bio {
+      margin-top: 18px;
+      margin-bottom: 18px; }
+    .post .bottom-teaser .isLeft .username {
+      margin-left: 4px;
+      margin-right: 18px;
+      margin-bottom: 18px; }
+    .post .bottom-teaser .isLeft .index-headline {
+      padding-bottom: 32px; }
+    .post .bottom-teaser .isLeft a {
+      color: black;
+      text-decoration: none; }
+      .post .bottom-teaser .isLeft a:hover {
+        color: #333333;
+        text-decoration: underline; }
+    .post .bottom-teaser .isLeft .author-image {
+      display: block;
+      width: 80px;
+      height: 80px;
+      float: left;
+      background-size: cover;
+      border-radius: 100%;
+      text-indent: -9999px; }
+    .post .bottom-teaser .isLeft h4 {
+      font-size: 18px;
+      line-height: 1.1;
+      font-weight: 700;
+      padding: 0;
+      margin: 0;
+      padding-left: 100px; }
+    .post .bottom-teaser .isLeft p {
+      font-size: 14px;
+      line-height: 1.3;
+      font-weight: 400;
+      padding: 0;
+      margin: 0;
+      padding-left: 100px; }
+      .post .bottom-teaser .isLeft p.published {
+        color: #999999; }
+  .post .bottom-teaser .isRight {
+    float: right;
+    width: 47%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+    @media only screen and (max-width: 800px) {
+      .post .bottom-teaser .isRight {
+        width: 100%; } }
+    .post .bottom-teaser .isRight .index-headline {
+      padding-bottom: 32px; }
+    .post .bottom-teaser .isRight .site-footer {
+      margin: 0;
+      padding: 0;
+      color: #333333;
+      text-align: left;
+      font-size: 14px;
+      line-height: 1.3;
+      color: #999999; }
+      .post .bottom-teaser .isRight .site-footer a {
+        color: #333333;
+        text-decoration: none; }
+        .post .bottom-teaser .isRight .site-footer a:hover {
+          text-decoration: underline; }
+      .post .bottom-teaser .isRight .site-footer .poweredby {
+        display: block;
+        padding-bottom: 18px;
+        font-weight: 700;
+        color: #333333; }
+
+.share {
+  text-align: right;
+  padding: 20px 0 0; }
+  .share a {
+    text-decoration: none;
+    color: #bbbbbb;
+    padding-left: 12px; }
+    .share a .hidden {
+      display: none; }
+    .share a:hover {
+      color: #333333; }
+
+pre,
+code {
+  font-size: 15px;
+  border: 1px solid #e8e8e8;
+  border-radius: 3px;
+  background-color: #eeeeff; }
+
+code {
+  padding: 1px 5px; }
+
+pre {
+  padding: 8px 12px;
+  overflow-x: scroll; }
+  pre > code {
+    border: 0;
+    padding-right: 0;
+    padding-left: 0; }
+
+.pagination .disabled {
+  opacity: 0; }
+
+  </style>
+
+
+
+  <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+</head>
+
+  <body>
+    <header class="site-header">
+  <a href="/blog/" class="logo"><span class="logo"><amp-img src="/blog/assets/images/logo.jpg" width="48" height="48" /></span></a>
+
+  <div class="page-links">
+    <a class="page-link" href="/blog/">Home</a>
+    
+      
+      • <a class="page-link" href="/blog/about/">About</a>
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</header>
+
+
+    <main class="content" role="main">
+  <article class="post">
+    <div class="post-meta">
+      <h1 class="post-title">My New Post</h1>
+    </div>
+
+    <section class="post-content">
+      <a name="topofpage"></a>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit!</p>
+
+<amp-img width="600" height="500" layout="responsive" src="http://lorempixel.com/600/500/transport"></amp-img>
+
+<p>Nulla dapibus vestibulum ligula in sodales. Phasellus eu metus quam. Sed id varius diam. Morbi pellentesque lorem vitae ex commodo, sed dapibus ex dignissim. Etiam facilisis pellentesque gravida. Sed tempus diam sed odio tempor, tristique elementum erat condimentum. Ut volutpat dui ex, a auctor dolor pretium eget.</p>
+
+<p>Vivamus nec mauris suscipit enim viverra tristique ut eget risus. Vestibulum ullamcorper at sem eu sodales. Praesent felis tellus, condimentum vitae purus id, consectetur interdum urna. Pellentesque laoreet non arcu volutpat euismod. Suspendisse sed enim non ex interdum sodales. Quisque vitae vestibulum turpis. Aenean nec est dolor.</p>
+
+<blockquote>
+  <p>Pellentesque quis mi at erat iaculis cursus. Phasellus ligula neque, pulvinar sed malesuada id, feugiat ac magna. Proin sed scelerisque metus. Pellentesque mi augue, egestas nec ante a, faucibus ullamcorper enim. Sed nisi felis, rutrum imperdiet aliquam nec, placerat vel odio. Nulla quis urna ut risus aliquam tempor.</p>
+</blockquote>
+
+<amp-img width="600" height="300" layout="responsive" src="http://lorempixel.com/600/300/transport"></amp-img>
+
+<p>Nulla mi risus, lobortis quis lectus vel, gravida eleifend lacus. Proin mattis odio elit, nec vehicula diam varius vitae. Nunc a ipsum at justo rhoncus mattis. Proin auctor lorem quis libero viverra aliquam. Suspendisse quis tristique sapien. Integer eu felis vel orci dignissim suscipit pharetra vitae nisl. Ut viverra sed enim quis pretium. Etiam auctor a ante sed pharetra.</p>
+
+    </section>
+    <footer class="post-footer">
+      <section class="share">
+        <a class="icon" href="https://twitter.com/intent/tweet?url=http://peterxjang.com/2016/03/13/my-new-post&text=My+New+Post&via=peterxjang" target="_blank">
+          Share on
+          
+<span class="icon icon--twitter"><svg viewBox="0 0 16 16"><path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/></svg>
+</span>
+
+
+        </a>
+      </section>
+    </footer>
+    <div class="bottom-teaser cf">
+      <div class="isLeft">
+        <h5 class="index-headline featured"><span>Written by</span></h5>
+        <section class="author">
+          <div class="author-image"></div>
+          <h4>Peter Jang</h4>
+          <p class="bio">Mea suas vituperatoribus et, virtute corpora quaestio cum ut. Ne solet nostrum complectitur pri, vis ut inani populo.
+</p>
+
+          <p>
+            <span>
+              
+                <a href="https://github.com/peterxjang"><span class="icon icon--github"><svg viewBox="0 0 16 16"><path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/></svg>
+</span><span class="username">peterxjang</span></a>
+
+              
+            </span>
+
+            <span>
+              
+                
+<a href="https://twitter.com/peterxjang"><span class="icon icon--twitter"><svg viewBox="0 0 16 16"><path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/></svg>
+</span><span class="username">peterxjang</span></a>
+
+
+              
+            </span>
+          </p>
+          <hr>
+          <p class="published">Published <time datetime="2016-03-13 00:00">13 Mar 2016</time></p>
+        </section>
+      </div>
+      
+      <div class="isRight">
+        <h5 class="index-headline featured"><span>Supported by</span></h5>
+        <footer class="site-footer">
+          <section class="poweredby">Proudly published with <a href="http://jekyllrb.com"> Jekyll</a> and <a href="https://github.com/ageitgey/amplify">Amplify</a></section>
+          <a class="subscribe" href="/blog/feed.xml"> <span class="tooltip"> <i class="fa fa-rss"></i> You should subscribe to my feed.</span></a>
+          <div class="inner">
+            <section class="copyright">All content copyright <a href="mailto:peter.x.jang@gmail.com">Peter Jang</a> &copy; 2016<br>All rights reserved.</section>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </article>
+</main>
+
+  </body>
+</html>

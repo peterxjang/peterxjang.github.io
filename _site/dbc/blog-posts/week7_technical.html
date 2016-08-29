@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Peter Jang's DBC Portfolio</title>
+	<link rel="stylesheet" href="../stylesheets/dbc.css" />
+	<meta name="viewport" content="initial-scale=1">
+</head>
+<body>
+	<header id="main-header">
+		<h1>peter jang's <span id="dbc">dbc portfolio</span></h1>
+		<h3>my online portfolio of dev bootcamp work</h3>
+		<nav>
+			<ul id="main-header-nav">
+				<li><a href="../">HOME</a></li>
+				<li id="main-header-nav-selected">BLOG</li>
+				<li><a href="../assignments.html">ASSIGNMENTS</a></li>
+				<li><a href="../about.html">ABOUT</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div id="column-container">
+		<nav id="main-nav">
+			<ul>
+				<li><a href="../">HOME</a></li>
+				<li><a href="../blog.html">BLOG</a></li>
+				<li><a href="../assignments.html">ASSIGNMENTS</a></li>
+				<li><a href="../about.html">ABOUT</a></li>
+			</ul>
+		</nav>
+		<main>
+			<article>
+				<header>
+					<h2>My take on SQL vs. NoSQL</h2>
+					<time>2014-8-29</time>
+				</header>
+				<p>SQL is the language used to manage data in a relational database. Any application that needs to store and retrieve non-trivial amounts of information needs a database, and SQL is a tried and true language to manage it. It's also clunky to work with, primarily for two reasons. One, the syntax is esoteric, hard to learn, hard to read. Two, it has rigidly defined data structures, making it difficult to accomodate new types of data that are born into existence.</p>
+				<p>Enter NoSQL. NoSQL is a relatively recent technology created to respond to modern needs of applications. It provides dynamic scalability, which allows the database to still be responsive when their is a dramatic change to the number of users. It allows for unstructured flexible data to accomodate for new data types. It was created to work better for the needs of cloud computing, something that didn't exist when SQL was created.</p>
+				<p>So what are the downsides of NoSQL? Well, there's always going to be the fact that NoSQL hasn't been around as long as SQL. SQL is a proven technology, with well defined standards across multiple implementations. NoSQL doesn't have that, the language is different for each implementation. Another thing is that NoSQL is that due to its flexible document oriented nature, there can be duplication of information. SQL is more storage efficient (at the cost of that flexibility).</p>
+				<p>I think NoSQL is an important technology to understand and utilize, but it seems like there is still a need for developers to learn the basics behind SQL to fully understand what NoSQL really offers. I'm looking forward to building my fundamental knowledge of SQL, but in my opinion, the whole concept of databases and the way they interact with web development holistically needs to be rethought. NoSQL is an evolutionary step, one that may or may not withstand the test of time. What we truly need is a revolutionary step, which requires an examination of all elements in application design at the same time. That's what I'm looking forward to working with.</p>
+			</article>
+			<br /><a href="../blog.html">Back to all blog posts</a>
+		</main>
+	</div>
+	<footer id="main-footer">
+		<p>2014 Peter Jang</p>
+	</footer>
+</body>
+</HTML>
