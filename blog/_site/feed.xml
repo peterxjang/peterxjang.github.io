@@ -4,10 +4,10 @@
     <title>Peter X Jang</title>
     <description>Awesome site description here
 </description>
-    <link>http://peterxjang.com/blog/</link>
-    <atom:link href="http://peterxjang.com/blog/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 29 Aug 2016 20:31:31 -0500</pubDate>
-    <lastBuildDate>Mon, 29 Aug 2016 20:31:31 -0500</lastBuildDate>
+    <link>http://peterxjang.com/</link>
+    <atom:link href="http://peterxjang.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Mon, 29 Aug 2016 20:34:32 -0500</pubDate>
+    <lastBuildDate>Mon, 29 Aug 2016 20:34:32 -0500</lastBuildDate>
     <generator>Jekyll v3.1.2</generator>
     
       <item>
@@ -29,8 +29,8 @@
 &lt;p&gt;Nulla mi risus, lobortis quis lectus vel, gravida eleifend lacus. Proin mattis odio elit, nec vehicula diam varius vitae. Nunc a ipsum at justo rhoncus mattis. Proin auctor lorem quis libero viverra aliquam. Suspendisse quis tristique sapien. Integer eu felis vel orci dignissim suscipit pharetra vitae nisl. Ut viverra sed enim quis pretium. Etiam auctor a ante sed pharetra.&lt;/p&gt;
 </description>
         <pubDate>Sun, 13 Mar 2016 00:00:00 -0600</pubDate>
-        <link>http://peterxjang.com/blog/2016/03/13/my-new-post.html</link>
-        <guid isPermaLink="true">http://peterxjang.com/blog/2016/03/13/my-new-post.html</guid>
+        <link>http://peterxjang.com/2016/03/13/my-new-post.html</link>
+        <guid isPermaLink="true">http://peterxjang.com/2016/03/13/my-new-post.html</guid>
         
         
       </item>
@@ -64,8 +64,8 @@
 &lt;/blockquote&gt;
 </description>
         <pubDate>Tue, 08 Mar 2016 00:00:00 -0600</pubDate>
-        <link>http://peterxjang.com/blog/2016/03/08/example-post.html</link>
-        <guid isPermaLink="true">http://peterxjang.com/blog/2016/03/08/example-post.html</guid>
+        <link>http://peterxjang.com/2016/03/08/example-post.html</link>
+        <guid isPermaLink="true">http://peterxjang.com/2016/03/08/example-post.html</guid>
         
         
       </item>
