@@ -1,0 +1,21 @@
+body {
+  background: #eeeeff;
+  font-family: “Trebuchet MS”, Verdana, Arial, serif;
+}
+
+h1 {font-family: Georgia, sans-serif; color: #00ff00;}
+p {font-family: Tahoma, serif;}
+
+#sampleid{
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #666;
+  background: #ffffff;
+}
+
+.sampleclass{
+  font-size: small;
+  color: #008080;
+  font-weight: bold;
+}

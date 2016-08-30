@@ -1,0 +1,83 @@
+/* simple reset  */
+html, body, form, fieldset, legend { margin: 0; padding: 0; }
+h1, h2, h3, h4, h5, h6, p { margin: 0; }
+
+
+/* Layout */
+.header, .reflection, .references {
+  padding: 1%;
+}
+
+@media screen and (min-width: 900px) {  /*large devices */
+  body {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .wrapper {
+    width:100%;
+    overflow: auto;
+  }
+
+  .responsive-design, .fluid-layouts, .your-conclusion{
+    width: 30%;
+    float: left;
+    padding: 1%;
+  }
+
+  .references {
+    clear: both;
+    }
+  h1 {
+    font-size: 5em;
+  }
+}
+
+@media screen and (max-width: 900px) { /*medium devices */
+  body {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .wrapper {
+    padding: 1%;
+  }
+  .fluid-layouts, .your-conclusion{
+    padding-top: 3%;
+  }
+  h1 {
+    font-size: 5em;
+  }
+}
+
+@media screen and (max-width: 480px) { /*small devices */
+  h1 {
+    font-size: 3em;
+  }
+}
+
+
+
+
+/* Typography */
+html {
+  font-family: 'Josefin Sans', sans-serif;
+}
+body {
+  background: #99ccFF;
+}
+
+.header {
+  background-color: #005;
+  color: #ccf;
+}
+.header h3, .header h4 {
+  color: #bbf;
+}
+
+.reflection {
+  font-style: italic;
+}
+
+.reflection p {
+  font-size: 0.8em;
+}

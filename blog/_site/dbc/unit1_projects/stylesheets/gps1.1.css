@@ -1,0 +1,102 @@
+/* include your css here */
+body {
+	width: 960px;
+	margin: 0 auto;
+}
+nav li {
+	display: inline;
+	padding-right: 50px;
+}
+header {
+	background-color: #efefef;
+	padding: 10px;
+	margin: 10px;
+}
+main {
+	display: block;
+	overflow: auto;
+	height: 100%;
+}
+.column-section {
+	background-color: #efefef;
+	width: 280px;
+	float: left;
+	padding: 10px;
+	margin: 10px;
+}
+#reflection {
+	padding: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	clear: both;
+}
+
+footer {
+	background-color: #efefef;
+	padding: 10px;
+	margin: 10px;
+	clear: both;
+}
+
+
+body {
+	background-color: #171814	;
+}
+header {
+	background-color: #000;
+}
+h1, h2, h3, h4 {
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 700;
+}
+header h1 {
+	font-family: 'Press Start 2P', sans-serif;
+	font-size: 2.5em;
+	line-height: 1.4em;
+	color: #040;
+}
+p {
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 300;
+	font-size: 0.8em;
+	line-height: 1.5em;
+}
+.column-section h2 {
+	font-size: 7em;
+	padding-bottom: 0.1em;
+}
+#what-is-pp h2 {
+	color: #f8f8f2;
+}
+#why-do-pp h2 {
+	color: #f8f8f2;
+}
+#how-to-pp h2 {
+	color: #f8f8f2;
+}
+#what-is-pp p {
+	color: #B92659;
+}
+#why-do-pp p {
+	color: #6AC62E;
+}
+#how-to-pp p {
+	color: #66D9EF;
+}
+.column-section {
+	background-color: #272822;
+}
+#header-title {
+	color: #0b0;
+}
+#reflection	{
+	background-color: #121212;
+	color: #888;
+	font-size: 0.9em;
+}
+footer {
+	font-family: 'Press Start 2P', sans-serif;
+	font-size: 0.7em;
+	background-color: #000;
+	color: #040;
+}

@@ -1,0 +1,108 @@
+/* RESOURCES */
+@import url(http://fonts.googleapis.com/css?family=Lobster);
+@import url(http://fonts.googleapis.com/css?family=Playfair+Display);
+html { 
+  background: url(../images/2129782138_2efcf6c00e_o.jpg) no-repeat center center fixed; /* Photo by  John LLoyd: https://www.flickr.com/photos/hugo90/2129782138*/
+  background-color: rgb(209,209,211);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* CSS RESET */
+html, body, form, fieldset, legend { margin: 0; padding: 0; }
+h1, h2, h3, h4, h5, h6, p { margin: 0; padding: 0; }
+ul, ol, li { margin: 0; }
+fieldset,img { border: 0; }
+legend { color: #000; }
+sup { vertical-align: text-top; }
+sub { vertical-align: text-bottom; }
+table { border-collapse: collapse; border-spacing: 0;}
+caption, th, td { text-align: left; vertical-align: top; font-weight: normal; }
+input, textarea, select { font-size: 110%; line-height: 1.1; }
+abbr, acronym { border-bottom: .1em dotted; cursor: help; }
+
+
+/* LAYOUT */
+body {
+  max-width: 40%;
+  min-width: 350px;
+  position: absolute;
+  right: 0px;
+  margin-right: 10%;
+}
+header nav {
+  display: none;
+}
+@media screen and (min-width: 0px) and (max-width: 900px) { /*medium and small devices */
+  body {
+    position: static;
+    margin: 0 auto;
+  }
+}
+
+
+/* TYPOGRAPHY */
+body {
+  font-family: 'Lobster', cursive;
+}
+#content p {
+  font-family: 'Playfair Display', serif;
+}
+code {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.list-no-bullets {
+  list-style-type: none;
+  padding: 0.4em;
+  line-height: 2em;
+}
+.img-fullwidth {
+  width: 100%;
+}
+header {
+  padding: 5%;
+}
+#content {
+  padding: 5%;
+}
+footer {
+  padding-right: 3%;
+  text-align: right;
+}
+p, ul, ol {
+  margin-bottom: 1em;
+}
+h1 {
+  font-size: 5em;
+  line-height: 1em;
+}
+h2 {
+  font-size: 4em;
+  line-height: 1em;
+}
+
+
+/* COLOR */
+body {
+  background: rgb(42,56,83);
+  background: rgba(42,56,83,0.7);
+  box-shadow: 0 0 4px 4px rgb(42,56,83);
+  box-shadow: 0 0 4px 4px rgba(42,56,83,0.7);
+}
+header {
+  color: rgb(209,209,211);
+  background-color: rgba(42,56,83,0.0);
+}
+code {
+  color: #008099;
+}
+#content {
+  color: rgb(209,209,211);
+}
+footer {
+  color: rgb(209,209,211);
+}
+
