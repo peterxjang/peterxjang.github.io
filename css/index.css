@@ -22,6 +22,12 @@ body {
 main > h1 {
   font-size: 3em;
 }
+main > h2 {
+  margin-top: 3em;
+}
+main > h3 {
+  margin-top: 2em;
+}
 p:last-child {
   margin-bottom: 0;
 }
@@ -44,6 +50,7 @@ a[href]:visited {
 main {
   padding: 1rem;
   margin: 0 auto;
+  line-height: 1.2;
   max-width: 50em;
 }
 main :first-child {
