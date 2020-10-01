@@ -19,6 +19,9 @@ body {
   color: var(--darkgray);
   background-color: var(--white);
 }
+main > h1 {
+  font-size: 3em;
+}
 p:last-child {
   margin-bottom: 0;
 }
