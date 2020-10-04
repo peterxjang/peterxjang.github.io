@@ -28,6 +28,12 @@ main > h2 {
 main > h3 {
   margin-top: 2em;
 }
+main > blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 0;
+  padding: 1em;
+}
 p:last-child {
   margin-bottom: 0;
 }
