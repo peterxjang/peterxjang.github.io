@@ -34,6 +34,13 @@ main > blockquote {
   margin: 1.5em 0;
   padding: 1em;
 }
+main img + br + em {
+  font-style: normal;
+  display: inherit;
+  text-align: center;
+  color: #757575;
+  font-size: 80%;
+}
 p:last-child {
   margin-bottom: 0;
 }
