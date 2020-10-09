@@ -16,7 +16,7 @@ keywords: []
 
 ![](img/1__NQppPMuv7xYB1IB4hF4AnQ.png)
 
-In this part we will be implementing the [web based clone](https://medium.com/@peterxjang/comparing-frontend-frameworks-part-1-introduction-6cf3d49e42cf) of the [Mac Notes app](https://support.apple.com/kb/PH22608?locale=en_US) using [Elm](http://elm-lang.org/). Elm (which is not a JavaScript framework but a completely different language that compiles down to JavaScript) came out in 2012 and is currently gaining a lot of traction, with more and more companies [using it in production](https://github.com/lpil/elm-companies).
+In this part we will be implementing the [web based clone](comparing-frontend-approaches-part-1-introduction.html) of the [Mac Notes app](https://support.apple.com/kb/PH22608?locale=en_US) using [Elm](http://elm-lang.org/). Elm (which is not a JavaScript framework but a completely different language that compiles down to JavaScript) came out in 2012 and is currently gaining a lot of traction, with more and more companies [using it in production](https://github.com/lpil/elm-companies).
 
 Elm is a statically typed purely functional language inspired by Haskell, but with a design that makes it easier for beginners to functional programming to get started. It uses a virtual DOM approach similar to React (even though the two were created independently). Elm doesn’t use a framework per se, but instead uses a pattern called [The Elm Architecture](https://guide.elm-lang.org/architecture/). Let’s dive in and check it out!
 
@@ -24,7 +24,7 @@ Elm is a statically typed purely functional language inspired by Haskell, but wi
 
 ### Installation
 
-Like [Vue.js with components](https://medium.com/@peterxjang/comparing-frontend-frameworks-part-4-vue-js-with-components-675c880d4585) and [React](https://medium.com/@peterxjang/comparing-frontend-frameworks-part-5-react-b51fd7d075fe), we’re going to need a build process to use Elm. First we need to install Elm itself if you don’t already have it on your computer:
+Like [Vue.js with components](comparing-frontend-approaches-part-4-vuejs-with-components.html) and [React](comparing-frontend-approaches-part-5-react.html), we’re going to need a build process to use Elm. First we need to install Elm itself if you don’t already have it on your computer:
 
 ```
 $ npm install -g elm
@@ -38,7 +38,7 @@ $ elm init
 
 This will prompt you to create an `elm.json` file (which is similar to JavaScript’s `package.json` file). By default it included the necessary dependencies for Elm to work with a web browser.
 
-Next we’re going to create a new file called **`Notes.elm`**, which will contain our Elm code. Right now we aren’t going to add any new functionality, we just want to convert the HTML template into Elm code, like we did with [React](https://medium.com/@peterxjang/comparing-frontend-frameworks-part-1-introduction-6cf3d49e42cf) and JSX. However, Elm doesn’t use JSX — it uses plain old functions instead. Here’s what the **`Notes.elm`** file looks like:
+Next we’re going to create a new file called **`Notes.elm`**, which will contain our Elm code. Right now we aren’t going to add any new functionality, we just want to convert the HTML template into Elm code, like we did with [React](comparing-frontend-approaches-part-5-react.html) and JSX. However, Elm doesn’t use JSX — it uses plain old functions instead. Here’s what the **`Notes.elm`** file looks like:
 
 ```elm
 module Notes exposing (..)
@@ -221,7 +221,7 @@ viewNoteSelector note =
 
 You can see the complete **`Notes.elm`** file [here](https://github.com/peterxjang/notes-app-elm/blob/def4666dd0c9bc897ce9acd2c44ae23ef69020ee/Notes.elm).
 
-Unlike our [React approach](https://medium.com/@peterxjang/comparing-frontend-frameworks-part-5-react-b51fd7d075fe), we aren’t going to break this app into components up front, or ever for that matter. We will be breaking things up into functions, but only when there’s a need to do so. In this case I made a sub-function `viewNoteSelectors` which is responsible for generating the `<div class="note-selectors">` HTML. It does this by mapping over the list of notes and calling up the `viewNoteSelector` function, which takes in a note and outputs the `<div class="note-selector">` HTML.
+Unlike our [React approach](comparing-frontend-approaches-part-5-react.html), we aren’t going to break this app into components up front, or ever for that matter. We will be breaking things up into functions, but only when there’s a need to do so. In this case I made a sub-function `viewNoteSelectors` which is responsible for generating the `<div class="note-selectors">` HTML. It does this by mapping over the list of notes and calling up the `viewNoteSelector` function, which takes in a note and outputs the `<div class="note-selector">` HTML.
 
 Although this seems like a lot of code to get started, keep in mind that every Elm app will consist of the same 4 functions (init, view, update, and subscriptions). This takes away a lot of the decision fatigue that comes with building frontend apps.
 
@@ -1270,4 +1270,4 @@ Working with Elm is a pretty large departure from every other framework we looke
 
 The downsides to Elm are the learning curve and dealing with the outside world. For the learning curve, Elm works hard to utilize difficult functional concepts in a way that’s easy to get started. The best way to learn Elm isn’t to try and master the language — it’s to start building apps and learn as you go. The other downside is dealing with the outside world — as we saw, something as simple as getting a timestamp was fairly involved to wire up in Elm. Working with HTTP requests, JSON responses, WYSIWYG editors — these all require a lot more work compared to quick and dirty (but dangerous) JavaScript approaches.
 
-In the [last part](https://medium.com/@peterxjang/comparing-frontend-approaches-part-7-final-thoughts-69cdba516f86) of this series, I’ll wrap up with some final thoughts about each frontend approach and how you might choose the right tool for the job. Stay tuned!
+In the [last part](comparing-frontend-approaches-part-7-final-thoughts.html) of this series, I’ll wrap up with some final thoughts about each frontend approach and how you might choose the right tool for the job. Stay tuned!

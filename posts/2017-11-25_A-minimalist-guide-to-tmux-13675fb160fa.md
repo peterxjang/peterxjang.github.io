@@ -8,7 +8,7 @@ categories: []
 keywords: []
 ---
 
-Let’s say you’re using [vim](https://medium.com/@peterxjang/how-to-learn-vim-a-four-week-plan-cd8b376a9b85) to edit code on a remote computer [using ssh](https://medium.com/@peterxjang/web-development-on-an-ipad-69f253bc9c38), and you want to open a new terminal tab to start a development server. When you open a new tab, it won’t be connected to the remote machine, which means you would have to ssh and navigate to the appropriate directory each time. Furthermore, if your internet connection ever drops, you’ll lose all your ssh sessions and have to start everything up again.
+Let’s say you’re using [vim](how-to-learn-vim-a-four-week-plan.html) to edit code on a remote computer [using ssh](web-development-on-an-ipad.html), and you want to open a new terminal tab to start a development server. When you open a new tab, it won’t be connected to the remote machine, which means you would have to ssh and navigate to the appropriate directory each time. Furthermore, if your internet connection ever drops, you’ll lose all your ssh sessions and have to start everything up again.
 
 You can solve these issues by using [tmux](https://github.com/tmux/tmux/wiki), a command line tool which provides the following key features:
 
