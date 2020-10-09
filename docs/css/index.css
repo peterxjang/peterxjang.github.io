@@ -177,6 +177,15 @@ pre {
   font-weight: 700;
   text-decoration: underline;
 }
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+}
+main {
+  padding-top: 4em;
+}
 
 /* Posts list */
 .postlist {
