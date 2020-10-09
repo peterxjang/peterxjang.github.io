@@ -2,23 +2,103 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://peterxjang.com/blog/posts/firstpost/</loc>
-    <lastmod>2018-05-01</lastmod>
+    <loc>https://peterxjang.com/blog/web-development-on-an-ipad.html</loc>
+    <lastmod>2017-05-03</lastmod>
   </url>
   
   <url>
-    <loc>https://peterxjang.com/blog/posts/secondpost/</loc>
-    <lastmod>2018-07-04</lastmod>
+    <loc>https://peterxjang.com/blog/a-functional-canvas-approach-with-redux-part-1.html</loc>
+    <lastmod>2017-07-27</lastmod>
   </url>
   
   <url>
-    <loc>https://peterxjang.com/blog/posts/thirdpost/</loc>
-    <lastmod>2018-08-24</lastmod>
+    <loc>https://peterxjang.com/blog/a-functional-canvas-approach-with-redux-part-2.html</loc>
+    <lastmod>2017-07-27</lastmod>
   </url>
   
   <url>
-    <loc>https://peterxjang.com/blog/posts/fourthpost/</loc>
-    <lastmod>2018-09-30</lastmod>
+    <loc>https://peterxjang.com/blog/sending-post-requests-in-rails-51-without-jquery.html</loc>
+    <lastmod>2017-08-15</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://peterxjang.com/blog/comparing-frontend-approaches-part-1-introduction.html</loc>
+    <lastmod>2017-09-15</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://peterxjang.com/blog/comparing-frontend-approaches-part-2-jquery.html</loc>
+    <lastmod>2017-09-18</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://peterxjang.com/blog/comparing-frontend-approaches-part-3-vuejs.html</loc>
+    <lastmod>2017-09-19</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://peterxjang.com/blog/comparing-frontend-approaches-part-4-vuejs-with-components.html</loc>
+    <lastmod>2017-09-22</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://peterxjang.com/blog/comparing-frontend-approaches-part-5-react.html</loc>
+    <lastmod>2017-09-23</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://peterxjang.com/blog/comparing-frontend-approaches-part-6-elm.html</loc>
+    <lastmod>2017-09-26</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://peterxjang.com/blog/comparing-frontend-approaches-part-7-final-thoughts.html</loc>
+    <lastmod>2017-09-27</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://peterxjang.com/blog/dont-just-read-the-elm-guide-do-the-elm-guide.html</loc>
+    <lastmod>2017-09-28</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://peterxjang.com/blog/how-to-learn-vim-a-four-week-plan.html</loc>
+    <lastmod>2017-10-06</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://peterxjang.com/blog/modern-javascript-explained-for-dinosaurs.html</loc>
+    <lastmod>2017-10-18</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://peterxjang.com/blog/a-minimalist-guide-to-tmux.html</loc>
+    <lastmod>2017-11-25</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://peterxjang.com/blog/prototyping-with-vuejs-and-bootstrap.html</loc>
+    <lastmod>2017-12-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://peterxjang.com/blog/modern-css-explained-for-dinosaurs.html</loc>
+    <lastmod>2018-02-04</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://peterxjang.com/blog/optimizing-the-ipad-home-screen-for-ios-11-multitasking.html</loc>
+    <lastmod>2018-03-02</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://peterxjang.com/blog/modern-html-explained-for-dinosaurs.html</loc>
+    <lastmod>2018-11-14</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://peterxjang.com/blog/new-video-course-platform-from-actualize!.html</loc>
+    <lastmod>2020-09-27</lastmod>
   </url>
   
   <url>
@@ -43,21 +123,6 @@
   
   <url>
     <loc>https://peterxjang.com/blog/tags/</loc>
-    <lastmod>2020-09-28</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://peterxjang.com/blog/tags/number-2/</loc>
-    <lastmod>2020-09-28</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://peterxjang.com/blog/tags/second-tag/</loc>
-    <lastmod>2020-09-28</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://peterxjang.com/blog/tags/another-tag/</loc>
     <lastmod>2020-09-28</lastmod>
   </url>
 </urlset>

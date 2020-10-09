@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparing Frontend Approaches Part 7: Final Thoughts</title>
+    <meta name="description" content="A look at jQuery, Vue.js, React, and Elm">
+    <link rel="stylesheet" href="/blog/css/index.css">
+    <link rel="stylesheet" href="/blog/css/prism-base16-monokai.dark.css">
+    <link rel="alternate" href="/blog/feed/feed.xml" type="application/atom+xml" title="Peter Jang">
+    <link rel="alternate" href="/blog/feed/feed.json" type="application/json" title="Peter Jang">
+  </head>
+  <body>
+    <header>
+      <h1 class="home"><a href="/">Peter Jang</a></h1>
+      <ul class="nav">
+        <li class="nav-item"><a href="/blog/">Blog</a></li>
+        <li class="nav-item"><a href="/blog/posts/">Archive</a></li>
+        <li class="nav-item"><a href="/blog/about/">About</a></li>
+      </ul>
+    </header>
+
+    <main class="tmpl-post">
+
+      <h1>Comparing Frontend Approaches Part 7: Final Thoughts</h1>
+
+<ul>
+<li><a href="comparing-frontend-approaches-part-1-introduction.html">Part 1: Introduction</a></li>
+<li><a href="comparing-frontend-approaches-part-2-jquery.html">Part 2: jQuery</a></li>
+<li><a href="comparing-frontend-approaches-part-3-vuejs.html">Part 3: Vue.js</a></li>
+<li><a href="comparing-frontend-approaches-part-4-vuejs-with-components.html">Part 4: Vue.js with components</a></li>
+<li><a href="comparing-frontend-approaches-part-5-react.html">Part 5: React</a></li>
+<li><a href="comparing-frontend-approaches-part-6-elm.html">Part 6: Elm</a></li>
+<li><strong>Part 7: Final thoughts</strong></li>
+</ul>
+<p><img src="img/1__i1kwW5Jx__F3nYv0AsPlsXg.jpeg" alt=""></p>
+<p>If you’ve made it this far, congratulations! Here’s a brief summary of the pros and cons of each approach for building this particular notes app:</p>
+<h4 id="jquery">jQuery <a class="direct-link" href="#jquery">#</a></h4>
+<p>A direct DOM manipulation based approach. <br>
+<strong>Pros</strong>: Easy to install, easy to learn. Smaller in size than most frameworks.<br>
+<strong>Cons</strong>: Requires diligence with organizing code. Making all appropriate DOM updates when something changes can get complex (“jQuery spaghetti”).</p>
+<h4 id="vue.js">Vue.js <a class="direct-link" href="#vue.js">#</a></h4>
+<p>A template based approach (with a virtual DOM under the hood)<br>
+<strong>Pros</strong>: Easy to install, easy to learn. Smallest size in terms lines of code, one of the smallest in terms of payload.<br>
+<strong>Cons</strong>: Non-trivial amount of Vue specific syntax to learn. Can get harder to organize code in the single file and Vue instance as the app increases in complexity.</p>
+<h4 id="vue.js-with-components">Vue.js with components <a class="direct-link" href="#vue.js-with-components">#</a></h4>
+<p>The same Vue.js approach, this time with components<br>
+<strong>Pros</strong>: Single file components reduces cognitive load. Increased reusability and simplicity with components.<br>
+<strong>Cons</strong>: Requires complex build step. Passing data down and bubbling events up can be tedious with multiple parent-child components.</p>
+<h4 id="react">React <a class="direct-link" href="#react">#</a></h4>
+<p>A virtual DOM based component approach<br>
+<strong>Pros</strong>: Small API surface. Immutable state improves simplicity. Increased reusability and simplicity with components.<br>
+<strong>Cons</strong>: Requires complex build step. Harder to learn with heavy use of advanced and experimental JS features. Functional approach in JS requires particular care.</p>
+<h4 id="elm">Elm <a class="direct-link" href="#elm">#</a></h4>
+<p>A statically typed, purely functional approach with virtual DOM<br>
+<strong>Pros</strong>: Static types and immutable data prevent runtime errors. Clear code structure with The Elm Architecture. Smallest payload (as of version 0.19).<br>
+<strong>Cons</strong>: Harder to learn (a totally separate language from JS). Side effects require extra work to wire up.</p>
+<p>Note that the purpose here has never been to help you choose which frontend approach is “best”. The answer is always it depends on the context. For an app this small in scale, Vue.js (without components) seems like a good fit, especially since it has the smallest payload and the code is well structured. <em>(Edit: Elm version 0.19 has made a lot of</em> <a href="http://elm-lang.org/blog/small-assets-without-the-headache"><em>optimizations to reduce payload size</em></a> <em>and currently is significantly smaller than all other approaches here!)</em> But most apps tend to increase in scope, and even your most fundamental assumptions can change as you add, remove, or modify features.</p>
+<p>Context also includes a person’s current level of knowledge. What’s easy for you might be hard for someone else, and vice versa. What’s hard for you today may be easy for you a year from now. This means Elm might be a terrible choice for someone with a tight deadline and no experience with functional programming, and yet would be a perfect choice for someone already experienced with Elm. All frontend approaches covered here have great merit, and the honest best choice has more to do with your team and company culture than it does with some definitive “winner”.</p>
+<p>Going back to the original idea of learning a new programming language a year, my hope is that you gained a better understanding of how each frontend approach works. This will help you write better code, regardless of your choice of library or framework. I also hope this inspired you to dig deeper into a frontend approach, whether you’re new to functional programming or a React developer who never learned jQuery. Thanks for reading!</p>
+
+
+<hr>
+<ul><li>Next: <a href="/blog/dont-just-read-the-elm-guide-do-the-elm-guide.html">Don’t just read the Elm Guide, do the Elm Guide</a></li><li>Previous: <a href="/blog/comparing-frontend-approaches-part-6-elm.html">Comparing Frontend Approaches Part 6: Elm</a></li>
+</ul>
+
+    </main>
+
+    <footer></footer>
+
+    <!-- Current page: /blog/comparing-frontend-approaches-part-7-final-thoughts.html -->
+  </body>
+</html>
