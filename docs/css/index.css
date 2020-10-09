@@ -203,7 +203,7 @@ pre {
 }
 .postlist-link {
   display: inline-block;
-  padding: 0.25em 0.1875em; /* 4px 3px /16 */
+  padding: 0.25em 0; /* 4px 3px /16 */
   margin-bottom: 1em;
 }
 .postlist-item-active .postlist-link {
@@ -213,10 +213,6 @@ pre {
   font-size: 1.1875em; /* 19px /16 */
   font-weight: 700;
 }
-time {
-  padding: 0.1875em;
-}
-
 /* Tags */
 .post-tag {
   display: inline-block;
