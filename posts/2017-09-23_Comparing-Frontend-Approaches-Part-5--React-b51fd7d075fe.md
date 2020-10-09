@@ -1,7 +1,7 @@
 ---
 title: "Comparing Frontend Approaches Part 5: React"
 description: "A look at jQuery, Vue.js, React, and Elm"
-date: "2017-09-23T16:23:26.457Z"
+date: 2017-09-23
 categories: []
 keywords: []
 ---

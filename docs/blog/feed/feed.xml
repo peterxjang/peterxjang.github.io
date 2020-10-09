@@ -5,7 +5,7 @@
 	
 	<link href="https://peterxjang.com/blog/feed/feed.xml" rel="self"/>
 	<link href="https://peterxjang.com/blog"/>
-	<updated>2020-09-26T21:07:02-05:00</updated>
+	<updated>2020-09-26T19:00:00-05:00</updated>
 	<id>https://peterxjang.com/blog</id>
 	<author>
 		<name>Peter Jang</name>
@@ -15,7 +15,7 @@
 	<entry>
 		<title>New video course platform from Actualize!</title>
 		<link href="https://peterxjang.com/blog/new-video-course-platform-from-actualize!.html"/>
-		<updated>2020-09-26T21:07:02-05:00</updated>
+		<updated>2020-09-26T19:00:00-05:00</updated>
 		<id>https://peterxjang.com/blog/new-video-course-platform-from-actualize!.html</id>
 		<content type="html">&lt;p&gt;&lt;img src=&quot;https://peterxjang.com/blog/img/1__L5kEPTYCBrg2iF5L0tKCnA.png&quot; alt=&quot;Featured courses from Actualize First Class&quot;&gt;&lt;br&gt;
 &lt;em&gt;Featured courses from Actualize First Class: &lt;a href=&quot;https://firstclass.actualize.co/&quot;&gt;https://firstclass.actualize.co&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
@@ -27,7 +27,7 @@
 	<entry>
 		<title>Modern HTML Explained For Dinosaurs</title>
 		<link href="https://peterxjang.com/blog/modern-html-explained-for-dinosaurs.html"/>
-		<updated>2018-11-14T15:33:01-06:00</updated>
+		<updated>2018-11-13T18:00:00-06:00</updated>
 		<id>https://peterxjang.com/blog/modern-html-explained-for-dinosaurs.html</id>
 		<content type="html">&lt;p&gt;&lt;img src=&quot;https://peterxjang.com/blog/img/1__EEHKg3z__FAk0ipZDFuWKcw.png&quot; alt=&quot;Dinosaur comic panel 1&quot;&gt;&lt;br&gt;
 &lt;em&gt;Images from &lt;a href=&quot;http://www.qwantz.com/&quot;&gt;Dinosaur Comics&lt;/a&gt; by &lt;a href=&quot;https://twitter.com/ryanqnorth&quot;&gt;Ryan North&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
@@ -233,7 +233,7 @@
 	<entry>
 		<title>Optimizing the iPad Home Screen For iOS 11 Multitasking</title>
 		<link href="https://peterxjang.com/blog/optimizing-the-ipad-home-screen-for-ios-11-multitasking.html"/>
-		<updated>2018-03-02T12:18:15-06:00</updated>
+		<updated>2018-03-01T18:00:00-06:00</updated>
 		<id>https://peterxjang.com/blog/optimizing-the-ipad-home-screen-for-ios-11-multitasking.html</id>
 		<content type="html">&lt;p&gt;&lt;img src=&quot;https://peterxjang.com/blog/img/1__kphpkmmsf63WLBMCB9p8uA__2x.jpeg&quot; alt=&quot;iPad home screen with all apps in the dock&quot;&gt;&lt;/p&gt;
 &lt;p&gt;It’s been a while since I wrote about &lt;a href=&quot;https://peterxjang.com/blog/web-development-on-an-ipad.html&quot;&gt;using an iPad as a laptop replacement&lt;/a&gt;. Since then iOS 11 was released, which introduced completely new multitasking capabilities, bringing iPads even closer to having a full computing experience.&lt;/p&gt;
@@ -256,7 +256,7 @@
 	<entry>
 		<title>Modern CSS Explained For Dinosaurs</title>
 		<link href="https://peterxjang.com/blog/modern-css-explained-for-dinosaurs.html"/>
-		<updated>2018-02-04T13:03:36-06:00</updated>
+		<updated>2018-02-03T18:00:00-06:00</updated>
 		<id>https://peterxjang.com/blog/modern-css-explained-for-dinosaurs.html</id>
 		<content type="html">&lt;p&gt;&lt;img src=&quot;https://peterxjang.com/blog/img/1__kXsiGLMHSS4jUx4W6yBOlw.png&quot; alt=&quot;Dinosaur comic panel 1&quot;&gt;&lt;br&gt;
 &lt;em&gt;Images from &lt;a href=&quot;http://www.qwantz.com/&quot;&gt;Dinosaur Comics&lt;/a&gt; by &lt;a href=&quot;https://twitter.com/ryanqnorth&quot;&gt;Ryan North&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
@@ -389,7 +389,7 @@
 	<entry>
 		<title>Prototyping with Vue.js and Bootstrap</title>
 		<link href="https://peterxjang.com/blog/prototyping-with-vuejs-and-bootstrap.html"/>
-		<updated>2017-12-29T00:03:00-06:00</updated>
+		<updated>2017-12-28T18:00:00-06:00</updated>
 		<id>https://peterxjang.com/blog/prototyping-with-vuejs-and-bootstrap.html</id>
 		<content type="html">&lt;p&gt;&lt;img src=&quot;https://peterxjang.com/blog/img/1__UTO3Xix1EbdZXYP4Bam__eg.png&quot; alt=&quot;Example Bootstrap modal&quot;&gt;&lt;/p&gt;
 &lt;p&gt;Let’s say you’re in a situation where you want to create a quick prototype frontend for a web application, something you would throw together in a couple of hours. In this scenario it might be overkill to use a &lt;a href=&quot;https://peterxjang.com/blog/modern-javascript-explained-for-dinosaurs.html&quot;&gt;modern build process&lt;/a&gt; with a component-based frontend architecture. One good combo can be to use &lt;a href=&quot;https://getbootstrap.com/&quot;&gt;Bootstrap&lt;/a&gt; for visuals and &lt;a href=&quot;https://vuejs.org/&quot;&gt;Vue.js&lt;/a&gt; for interactivity. These frameworks work well for creating prototypes, because they don’t necessarily require any tooling or configuration — you can start with this &lt;a href=&quot;https://getbootstrap.com/docs/4.0/getting-started/introduction/#starter-template&quot;&gt;Bootstrap HTML template&lt;/a&gt;, add the &lt;a href=&quot;https://vuejs.org/v2/guide/#Getting-Started&quot;&gt;script tag for Vue.js&lt;/a&gt;, and you’re good to go!&lt;/p&gt;
@@ -427,7 +427,7 @@
 	<entry>
 		<title>A minimalist guide to tmux</title>
 		<link href="https://peterxjang.com/blog/a-minimalist-guide-to-tmux.html"/>
-		<updated>2017-11-25T11:58:34-06:00</updated>
+		<updated>2017-11-24T18:00:00-06:00</updated>
 		<id>https://peterxjang.com/blog/a-minimalist-guide-to-tmux.html</id>
 		<content type="html">&lt;p&gt;Let’s say you’re using &lt;a href=&quot;https://peterxjang.com/blog/how-to-learn-vim-a-four-week-plan.html&quot;&gt;vim&lt;/a&gt; to edit code on a remote computer &lt;a href=&quot;https://peterxjang.com/blog/web-development-on-an-ipad.html&quot;&gt;using ssh&lt;/a&gt;, and you want to open a new terminal tab to start a development server. When you open a new tab, it won’t be connected to the remote machine, which means you would have to ssh and navigate to the appropriate directory each time. Furthermore, if your internet connection ever drops, you’ll lose all your ssh sessions and have to start everything up again.&lt;/p&gt;
 &lt;p&gt;You can solve these issues by using &lt;a href=&quot;https://github.com/tmux/tmux/wiki&quot;&gt;tmux&lt;/a&gt;, a command line tool which provides the following key features:&lt;/p&gt;
@@ -490,7 +490,7 @@ set -g base-index 1
 	<entry>
 		<title>Modern JavaScript Explained For Dinosaurs</title>
 		<link href="https://peterxjang.com/blog/modern-javascript-explained-for-dinosaurs.html"/>
-		<updated>2017-10-18T12:25:08-05:00</updated>
+		<updated>2017-10-17T19:00:00-05:00</updated>
 		<id>https://peterxjang.com/blog/modern-javascript-explained-for-dinosaurs.html</id>
 		<content type="html">&lt;p&gt;&lt;img src=&quot;https://peterxjang.com/blog/img/1__H8PH__HaV43gZyBJz0mJHxA.png&quot; alt=&quot;Images from Dinosaur Comics by Ryan North&quot;&gt;&lt;br&gt;
 &lt;em&gt;Images from &lt;a href=&quot;http://www.qwantz.com/&quot;&gt;Dinosaur Comics&lt;/a&gt; by &lt;a href=&quot;https://twitter.com/ryanqnorth&quot;&gt;Ryan North&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
@@ -626,7 +626,7 @@ set -g base-index 1
 	<entry>
 		<title>How To Learn Vim: A Four Week Plan</title>
 		<link href="https://peterxjang.com/blog/how-to-learn-vim-a-four-week-plan.html"/>
-		<updated>2017-10-05T23:56:19-05:00</updated>
+		<updated>2017-10-05T19:00:00-05:00</updated>
 		<id>https://peterxjang.com/blog/how-to-learn-vim-a-four-week-plan.html</id>
 		<content type="html">&lt;p&gt;&lt;img src=&quot;https://peterxjang.com/blog/img/1__b8yLTUhLfIcdcqbPOGQSxA.png&quot; alt=&quot;Vim with custom color scheme, syntax highlighting, linting, and autocomplete&quot;&gt;&lt;br&gt;
 &lt;em&gt;Vim with custom color scheme, syntax highlighting, linting, and autocomplete&lt;/em&gt;&lt;/p&gt;
@@ -719,7 +719,7 @@ set -g base-index 1
 	<entry>
 		<title>Don’t just read the Elm Guide, do the Elm Guide</title>
 		<link href="https://peterxjang.com/blog/dont-just-read-the-elm-guide-do-the-elm-guide.html"/>
-		<updated>2017-09-28T18:28:37-05:00</updated>
+		<updated>2017-09-27T19:00:00-05:00</updated>
 		<id>https://peterxjang.com/blog/dont-just-read-the-elm-guide-do-the-elm-guide.html</id>
 		<content type="html">&lt;p&gt;Recently I’ve been teaching myself the &lt;a href=&quot;http://elm-lang.org/&quot;&gt;Elm programming language&lt;/a&gt;, something I’ve been wanting to do ever since I saw the &lt;a href=&quot;http://debug.elm-lang.org/edit/Mario.elm&quot;&gt;Elm Debugger: Mario&lt;/a&gt; example in 2014. About 100 lines of code with sprite animation, keyboard input, and a time-traveling debugger — this really blew me away, I had never seen anything like it!&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://peterxjang.com/blog/img/1__yPn19xbe1wjCo2c4os__vDA.gif&quot; alt=&quot;Elm game with time-traveling debugger&quot;&gt;&lt;/p&gt;
@@ -763,7 +763,7 @@ set -g base-index 1
 	<entry>
 		<title>Comparing Frontend Approaches Part 7: Final Thoughts</title>
 		<link href="https://peterxjang.com/blog/comparing-frontend-approaches-part-7-final-thoughts.html"/>
-		<updated>2017-09-27T01:45:31-05:00</updated>
+		<updated>2017-09-26T19:00:00-05:00</updated>
 		<id>https://peterxjang.com/blog/comparing-frontend-approaches-part-7-final-thoughts.html</id>
 		<content type="html">&lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://peterxjang.com/blog/comparing-frontend-approaches-part-1-introduction.html&quot;&gt;Part 1: Introduction&lt;/a&gt;&lt;/li&gt;
@@ -805,7 +805,7 @@ set -g base-index 1
 	<entry>
 		<title>Comparing Frontend Approaches Part 6: Elm</title>
 		<link href="https://peterxjang.com/blog/comparing-frontend-approaches-part-6-elm.html"/>
-		<updated>2017-09-25T22:49:30-05:00</updated>
+		<updated>2017-09-25T19:00:00-05:00</updated>
 		<id>https://peterxjang.com/blog/comparing-frontend-approaches-part-6-elm.html</id>
 		<content type="html">&lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://peterxjang.com/blog/comparing-frontend-approaches-part-1-introduction.html&quot;&gt;Part 1: Introduction&lt;/a&gt;&lt;/li&gt;
@@ -951,7 +951,7 @@ set -g base-index 1
 	<entry>
 		<title>Comparing Frontend Approaches Part 5: React</title>
 		<link href="https://peterxjang.com/blog/comparing-frontend-approaches-part-5-react.html"/>
-		<updated>2017-09-23T11:23:26-05:00</updated>
+		<updated>2017-09-22T19:00:00-05:00</updated>
 		<id>https://peterxjang.com/blog/comparing-frontend-approaches-part-5-react.html</id>
 		<content type="html">&lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://peterxjang.com/blog/comparing-frontend-approaches-part-1-introduction.html&quot;&gt;Part 1: Introduction&lt;/a&gt;&lt;/li&gt;
@@ -1149,7 +1149,7 @@ set -g base-index 1
 	<entry>
 		<title>Comparing Frontend Approaches Part 4: Vue.js with Components</title>
 		<link href="https://peterxjang.com/blog/comparing-frontend-approaches-part-4-vuejs-with-components.html"/>
-		<updated>2017-09-21T19:00:06-05:00</updated>
+		<updated>2017-09-21T19:00:00-05:00</updated>
 		<id>https://peterxjang.com/blog/comparing-frontend-approaches-part-4-vuejs-with-components.html</id>
 		<content type="html">&lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://peterxjang.com/blog/comparing-frontend-approaches-part-1-introduction.html&quot;&gt;Part 1: Introduction&lt;/a&gt;&lt;/li&gt;
@@ -1329,7 +1329,7 @@ set -g base-index 1
 	<entry>
 		<title>Comparing Frontend Approaches Part 3: Vue.js</title>
 		<link href="https://peterxjang.com/blog/comparing-frontend-approaches-part-3-vuejs.html"/>
-		<updated>2017-09-19T12:49:19-05:00</updated>
+		<updated>2017-09-18T19:00:00-05:00</updated>
 		<id>https://peterxjang.com/blog/comparing-frontend-approaches-part-3-vuejs.html</id>
 		<content type="html">&lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://peterxjang.com/blog/comparing-frontend-approaches-part-1-introduction.html&quot;&gt;Part 1: Introduction&lt;/a&gt;&lt;/li&gt;
@@ -1434,7 +1434,7 @@ set -g base-index 1
 	<entry>
 		<title>Comparing Frontend Approaches Part 2: jQuery</title>
 		<link href="https://peterxjang.com/blog/comparing-frontend-approaches-part-2-jquery.html"/>
-		<updated>2017-09-18T18:28:41-05:00</updated>
+		<updated>2017-09-17T19:00:00-05:00</updated>
 		<id>https://peterxjang.com/blog/comparing-frontend-approaches-part-2-jquery.html</id>
 		<content type="html">&lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://peterxjang.com/blog/comparing-frontend-approaches-part-1-introduction.html&quot;&gt;Part 1: Introduction&lt;/a&gt;&lt;/li&gt;
@@ -1534,7 +1534,7 @@ set -g base-index 1
 	<entry>
 		<title>Comparing Frontend Approaches Part 1: Introduction</title>
 		<link href="https://peterxjang.com/blog/comparing-frontend-approaches-part-1-introduction.html"/>
-		<updated>2017-09-15T16:10:11-05:00</updated>
+		<updated>2017-09-14T19:00:00-05:00</updated>
 		<id>https://peterxjang.com/blog/comparing-frontend-approaches-part-1-introduction.html</id>
 		<content type="html">&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Part 1: Introduction&lt;/strong&gt;&lt;/li&gt;
@@ -1584,7 +1584,7 @@ set -g base-index 1
 	<entry>
 		<title>Sending POST requests in Rails 5.1 without jQuery</title>
 		<link href="https://peterxjang.com/blog/sending-post-requests-in-rails-51-without-jquery.html"/>
-		<updated>2017-08-15T10:58:15-05:00</updated>
+		<updated>2017-08-14T19:00:00-05:00</updated>
 		<id>https://peterxjang.com/blog/sending-post-requests-in-rails-51-without-jquery.html</id>
 		<content type="html">&lt;p&gt;Since the jQuery library was removed as a hard dependency in Rails 5.1, it’s a little harder to send AJAX requests from JavaScript. jQuery made it easy for a couple of reasons. One, it provided helper functions like &lt;code&gt;$.get&lt;/code&gt;, &lt;code&gt;$.post&lt;/code&gt;, and the more general&lt;code&gt;$.ajax&lt;/code&gt;. Two, it automatically included the CSRF token in the header of the request. Without the CSRF token that Rails generates, Rails will by default reject any non-GET requests, even for same-origin requests.&lt;/p&gt;
 &lt;p&gt;Despite not having jQuery, Rails 5.1 actually does provide a way to send AJAX requests! Rails was able to drop the jQuery dependency simply by writing their own helper functions in vanilla JavaScript. These helpers are included in every new Rails app as &lt;code&gt;rails-ujs&lt;/code&gt; (you can see the source &lt;a href=&quot;https://github.com/rails/rails/tree/master/actionview/app/assets/javascripts&quot;&gt;here&lt;/a&gt;). This gives your JavaScript access to an object called &lt;code&gt;Rails&lt;/code&gt; (as opposed to &lt;code&gt;$&lt;/code&gt;). One of the helpers is &lt;code&gt;Rails.ajax&lt;/code&gt;, which is very similar to jQuery’s &lt;code&gt;$.ajax&lt;/code&gt;. Here is an example of a GET request:&lt;/p&gt;

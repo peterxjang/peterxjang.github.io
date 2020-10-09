@@ -3,7 +3,7 @@ title: New video course platform from Actualize!
 description: >-
   Just wanted to announce Actualize First Class, the new video course platform
   from Actualize coding bootcamp! These courses will cover…
-date: '2020-09-27T02:07:02.749Z'
+date: 2020-09-27
 categories: []
 keywords: []
 ---

@@ -3,10 +3,9 @@ title: Modern CSS Explained For Dinosaurs
 description: >-
   CSS is strangely considered both one of the easiest and one of the hardest
   languages to learn as a web developer. It’s certainly easy…
-date: '2018-02-04T19:03:36.489Z'
+date: 2018-02-04
 categories: []
 keywords: []
-slug: /@peterxjang/modern-css-explained-for-dinosaurs-5226febe3525
 ---
 
 ![Dinosaur comic panel 1](img/1__kXsiGLMHSS4jUx4W6yBOlw.png)

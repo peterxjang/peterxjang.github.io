@@ -3,7 +3,7 @@ title: "How To Learn Vim: A Four Week Plan"
 description: >-
   Vim is a command line text editor that is notorious for being hard to learn
   (the running joke is to generate a truly random string, put a…
-date: "2017-10-06T04:56:19.858Z"
+date: 2017-10-06
 categories: []
 keywords: []
 ---

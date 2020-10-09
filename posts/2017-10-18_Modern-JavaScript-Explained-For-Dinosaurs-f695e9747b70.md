@@ -3,7 +3,7 @@ title: Modern JavaScript Explained For Dinosaurs
 description: >-
   Learning modern JavaScript is tough if you haven’t been there since the
   beginning. The ecosystem is growing and changing so rapidly that…
-date: '2017-10-18T17:25:08.708Z'
+date: 2017-10-18
 categories: []
 keywords: []
 ---

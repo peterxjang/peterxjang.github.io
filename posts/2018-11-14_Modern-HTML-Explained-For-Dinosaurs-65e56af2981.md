@@ -3,7 +3,7 @@ title: Modern HTML Explained For Dinosaurs
 description: >-
   Out of the three main frontend technologies (HTML, CSS, and JavaScript), HTML
   has remained the most consistent. If your only concern was…
-date: '2018-11-14T21:33:01.054Z'
+date: 2018-11-14
 categories: []
 keywords: []
 ---

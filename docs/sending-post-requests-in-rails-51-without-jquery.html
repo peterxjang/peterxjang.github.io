@@ -23,7 +23,10 @@
 
     <main class="tmpl-post">
 
-      <h1>Sending POST requests in Rails 5.1 without jQuery</h1>
+      <div class="post-title">
+  <h1>Sending POST requests in Rails 5.1 without jQuery</h1>
+  <time class="postlist-date" datetime="2017-08-15">15 Aug 2017</time>
+</div>
 
 <p>Since the jQuery library was removed as a hard dependency in Rails 5.1, it’s a little harder to send AJAX requests from JavaScript. jQuery made it easy for a couple of reasons. One, it provided helper functions like <code>$.get</code>, <code>$.post</code>, and the more general<code>$.ajax</code>. Two, it automatically included the CSRF token in the header of the request. Without the CSRF token that Rails generates, Rails will by default reject any non-GET requests, even for same-origin requests.</p>
 <p>Despite not having jQuery, Rails 5.1 actually does provide a way to send AJAX requests! Rails was able to drop the jQuery dependency simply by writing their own helper functions in vanilla JavaScript. These helpers are included in every new Rails app as <code>rails-ujs</code> (you can see the source <a href="https://github.com/rails/rails/tree/master/actionview/app/assets/javascripts">here</a>). This gives your JavaScript access to an object called <code>Rails</code> (as opposed to <code>$</code>). One of the helpers is <code>Rails.ajax</code>, which is very similar to jQuery’s <code>$.ajax</code>. Here is an example of a GET request:</p>

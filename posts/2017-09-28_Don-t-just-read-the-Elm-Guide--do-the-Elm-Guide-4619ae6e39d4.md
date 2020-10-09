@@ -1,7 +1,7 @@
 ---
 title: "Don’t just read the Elm Guide, do the Elm Guide"
 description: My experiences getting started with learning Elm
-date: "2017-09-28T23:28:37.671Z"
+date: 2017-09-28
 categories: []
 keywords: []
 ---

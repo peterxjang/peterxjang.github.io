@@ -3,7 +3,7 @@ title: Prototyping with Vue.js and Bootstrap
 description: >-
   Let’s say you’re in a situation where you want to create a quick prototype
   frontend for a web application, something you would throw…
-date: '2017-12-29T06:03:00.363Z'
+date: 2017-12-29
 categories: []
 keywords: []
 ---

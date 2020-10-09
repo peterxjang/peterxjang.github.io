@@ -3,7 +3,7 @@ title: Optimizing the iPad Home Screen For iOS 11 Multitasking
 description: >-
   It’s been a while since I wrote about using an iPad as a laptop replacement.
   Since then iOS 11 was released, which introduced completely…
-date: '2018-03-02T18:18:15.222Z'
+date: 2018-03-02
 categories: []
 keywords: []
 ---

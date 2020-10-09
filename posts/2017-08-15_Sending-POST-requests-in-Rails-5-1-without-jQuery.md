@@ -3,7 +3,7 @@ title: Sending POST requests in Rails 5.1 without jQuery
 description: >-
   Since the jQuery library was removed as a hard dependency in Rails 5.1, it’s a
   little harder to send AJAX requests from JavaScript. jQuery…
-date: "2017-08-15T15:58:15.539Z"
+date: 2017-08-15
 ---
 
 Since the jQuery library was removed as a hard dependency in Rails 5.1, it’s a little harder to send AJAX requests from JavaScript. jQuery made it easy for a couple of reasons. One, it provided helper functions like `$.get`, `$.post`, and the more general`$.ajax`. Two, it automatically included the CSRF token in the header of the request. Without the CSRF token that Rails generates, Rails will by default reject any non-GET requests, even for same-origin requests.

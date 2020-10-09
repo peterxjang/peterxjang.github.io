@@ -3,7 +3,7 @@ title: A minimalist guide to tmux
 description: >-
   Let’s say you’re using vim to edit code on a remote computer using ssh, and
   you want to open a new terminal tab to start a development…
-date: '2017-11-25T17:58:34.399Z'
+date: 2017-11-25
 categories: []
 keywords: []
 ---

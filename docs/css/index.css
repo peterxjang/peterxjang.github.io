@@ -19,8 +19,12 @@ body {
   color: var(--darkgray);
   background-color: var(--white);
 }
-main > h1 {
+.post-title h1 {
   font-size: 3em;
+  margin-bottom: 0;
+}
+.post-title {
+  margin-bottom: 2em;
 }
 main > h2 {
   margin-top: 3em;
@@ -181,7 +185,8 @@ pre {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: white;
+  background-color: rgb(253, 254, 255);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.07);
 }
 main {
   padding-top: 4em;
