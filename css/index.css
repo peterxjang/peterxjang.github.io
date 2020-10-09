@@ -213,6 +213,12 @@ pre {
   font-size: 1.1875em; /* 19px /16 */
   font-weight: 700;
 }
+.post-navigation {
+  margin-top: 2em;
+}
+.post-navigation li {
+  margin: 1em 0;
+}
 /* Tags */
 .post-tag {
   display: inline-block;
