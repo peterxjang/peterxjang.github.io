@@ -169,6 +169,10 @@ pre {
   list-style: none;
   float: left;
   margin-left: 1em;
+  padding-right: 1em;
+  display: flex;
+  align-items: center;
+  width: 100%;
 }
 .nav-item {
   display: inline-block;
@@ -181,6 +185,13 @@ pre {
   font-weight: 700;
   text-decoration: underline;
 }
+.nav-icon {
+  width: 24px;
+  transition: fill 0.3s ease;
+}
+.nav-icon:hover {
+  fill: #1da1f2;
+}
 .sticky {
   position: fixed;
   top: 0;
@@ -189,7 +200,7 @@ pre {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.07);
 }
 main {
-  padding-top: 4em;
+  padding-top: 6em;
 }
 
 /* Posts list */
