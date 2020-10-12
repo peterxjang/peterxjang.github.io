@@ -80,6 +80,7 @@ main :first-child {
   margin-top: 0;
 }
 header {
+  width: 100vw;
   border-bottom: 1px dashed var(--lightgray);
 }
 header:after {
@@ -167,12 +168,12 @@ pre {
 .nav {
   padding: 0;
   list-style: none;
-  float: left;
-  margin-left: 1em;
-  padding-right: 1em;
+  margin: 0.5em auto;
+  padding-left: 1em;
   display: flex;
   align-items: center;
   width: 100%;
+  max-width: 50em;
 }
 .nav-item {
   display: inline-block;
@@ -195,7 +196,6 @@ pre {
 .sticky {
   position: fixed;
   top: 0;
-  width: 100%;
   background-color: rgb(253, 254, 255);
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.07);
 }
