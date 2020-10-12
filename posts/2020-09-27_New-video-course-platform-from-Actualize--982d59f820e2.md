@@ -8,7 +8,7 @@ categories: []
 keywords: []
 ---
 
-![Featured courses from Actualize First Class](img/1__L5kEPTYCBrg2iF5L0tKCnA.png)
+![Featured courses from Actualize First Class](/img/1__L5kEPTYCBrg2iF5L0tKCnA.png)
 _Featured courses from Actualize First Class: [https://firstclass.actualize.co](https://firstclass.actualize.co)_
 
 Just wanted to announce [Actualize First Class](https://firstclass.actualize.co), the new video course platform from [Actualize coding bootcamp](https://actualize.co)! These courses will cover topics for developers at every experience level, from beginners at the very start of their developer journey ([macOS for developers](https://firstclass.actualize.co/p/macos-for-developers)), to seasoned developers looking to deepen their understanding of specific technologies ([OAuth 2.0 Deconstructed](https://firstclass.actualize.co/p/oauth2-deconstructed)).

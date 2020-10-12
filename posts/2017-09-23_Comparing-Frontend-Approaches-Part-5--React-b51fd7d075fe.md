@@ -64,7 +64,7 @@ $ cd my-app$ npm start
 
 The last command will run a dev server and automatically open up your browser to `localhost:3000`, where you should see something like this:
 
-![Default create-react-ap home page](img/1__T____IgXdlzLHGwJ2ftWBpVg.png)
+![Default create-react-ap home page](/img/1__T____IgXdlzLHGwJ2ftWBpVg.png)
 
 This is pretty cool, and what’s cooler is that you have a hot-reloading environment already set up for you. What that means is that if you make changes to your code, the browser at `localhost:3000` will automatically refresh. As it says, the place to start making changes is **`src/App.js`**, which right now looks like this:
 

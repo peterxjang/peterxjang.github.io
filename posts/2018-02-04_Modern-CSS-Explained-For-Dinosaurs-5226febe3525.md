@@ -8,7 +8,7 @@ categories: []
 keywords: []
 ---
 
-![Dinosaur comic panel 1](img/1__kXsiGLMHSS4jUx4W6yBOlw.png)
+![Dinosaur comic panel 1](/img/1__kXsiGLMHSS4jUx4W6yBOlw.png)
 _Images from [Dinosaur Comics](http://www.qwantz.com/) by [Ryan North](https://twitter.com/ryanqnorth)_
 
 CSS is strangely considered both one of the easiest and one of the hardest languages to learn as a web developer. It’s certainly easy enough to get started with it — you define style properties and values to apply to specific elements, and…that’s pretty much all you need to get going! However, it gets tangled and complicated to organize CSS in a meaningful way for larger projects. Changing any line of CSS to style an element on one page often leads to unintended changes for elements on other pages.
@@ -53,7 +53,7 @@ Let’s start with a basic website using just a simple **`index.html`**  file th
 
 Right now we aren’t using any classes or ids in the HTML, just [semantic tags](https://developer.mozilla.org/en-US/docs/Web/HTML/Element#Content_sectioning). Without any CSS, the website looks like this (using placeholder text):
 
-![Example webpage without styling](img/1__MwOy9E5LacvhGEtIUb9pXQ.png)
+![Example webpage without styling](/img/1__MwOy9E5LacvhGEtIUb9pXQ.png)
 _Click [here](https://codepen.io/peterxjang/pen/qxbxwK?editors=1100) to see a live example_
 
 Functional, but not very pretty. We can add CSS to improve the basic typography in **`index.css`**:
@@ -130,7 +130,7 @@ h6 {
 
 Here most of the CSS is styling the typography (fonts with sizes, line height, etc.), with some styling for the colors and a centered layout. You’d have to study design to know good values to choose for each of these properties (these styles are from [sakura.css](https://github.com/oxalorg/sakura)), but the CSS itself that’s being applied here isn’t too complicated to read. The result looks like this:
 
-![Example webpage with basic typography styling](img/1____rykiEopx6MCsnOAAcT8MA.png)
+![Example webpage with basic typography styling](/img/1____rykiEopx6MCsnOAAcT8MA.png)
 _Click [here](https://codepen.io/peterxjang/pen/oEbERP?editors=1100) to see a live example_
 
 What a difference! This is the promise of CSS — a simple way to add styles to a document, without requiring programming or complex logic. Unfortunately, things start to get hairier when we use CSS for more than just typography and colors (which we’ll tackle next).
@@ -177,7 +177,7 @@ aside {
 
 Now the website temporarily looks like:
 
-![Example website with css reset](img/1__Ii8mtqbLaS5GIB3VJTpqSw.png)
+![Example website with css reset](/img/1__Ii8mtqbLaS5GIB3VJTpqSw.png)
 _Click [here](https://codepen.io/peterxjang/pen/jZWzEV?editors=1100) to see a live example_
 
 Now we’re ready to use CSS to layout the content on the page. We’ll look at three different approaches in chronological order, starting with the classic float-based layouts.
@@ -238,7 +238,7 @@ footer {
 
 Looking at the CSS, you can see there are quite a few hacks necessary to get it to work (negative margins, the `clear: both` property, hard-coded width calculations, etc.) — the [article](https://alistapart.com/article/holygrail) does a good job explaining the reasoning for each in detail. Below is what the result looks like:
 
-![Example website with float based layout](img/1____2LrWDjxL8Q33fL6Ci4hIw.png)
+![Example website with float based layout](/img/1____2LrWDjxL8Q33fL6Ci4hIw.png)
 _Click [here](https://codepen.io/peterxjang/pen/VQeXYg?editors=1100) to see a live example_
 
 This is nice, but you can see from the colors that the three columns are not equal in height, and the page doesn’t fill the height of the screen. These issues are inherent with a float-based approach. All a float can do is place content to the left or right of a section — the CSS has no way to infer the heights of the content in the other sections. This problem had no straightforward solution until many years later, with a flexbox-based layout.
@@ -313,7 +313,7 @@ aside {
 
 That is way, way more compact compared to the float-based layout approach! The flexbox properties and values are a bit confusing at first glance, but it eliminates the need for a lot of the hacks like negative margins that were necessary with float-based layouts — a huge win. Here is what the result looks like:
 
-![Example website with flexbox based layout](img/1__I6qa6O31X__jlilGCrcSTsQ.png)
+![Example website with flexbox based layout](/img/1__I6qa6O31X__jlilGCrcSTsQ.png)
 _Click [here](https://codepen.io/peterxjang/pen/xYZWGz?editors=1100) for a live example_
 
 Much better! The columns are all equal height and take up the full height of the page. In some sense this seems perfect, but there are a couple of minor downsides to this approach. One is browser support — currently every modern browser supports flexbox, but some older browsers never will. Fortunately browser vendors are making a bigger push to end support for these older browsers, making a more consistent development experience for web designers. Another downside is the fact that we needed to add the `<div class="container">` to the markup — it would be nice to avoid it. In an ideal world, any CSS layout wouldn’t require changing the HTML markup at all.
@@ -371,14 +371,14 @@ The result is visually identical to the flexbox based layout. However, the CSS h
 
 One thing that can be confusing is the `grid-column` property, which defines the start point / end point of the column. It can be confusing because in this example, there are 3 columns, but the numbers range from 1 to 4. It becomes more clear when you look at the picture below:
 
-![Example website with grid based layout](img/1__GOJJrm9Mhp__Qr319Bc7V9Q.png)
+![Example website with grid based layout](/img/1__GOJJrm9Mhp__Qr319Bc7V9Q.png)
 _Click [here](https://codepen.io/peterxjang/pen/vdLROM?editors=1100) to see a live example_
 
 The first column starts at 1 and ends at 2, the second column starts at 2 and ends at 3, and the third column starts at 3 and ends at 4. The header has a `grid-column` of `1 / 4` to span the entire page, the nav has a `grid-column` of `1 / 2` to span the first column, etc.
 
 Once you get used to the grid syntax, it clearly becomes the ideal way to express layout in CSS. The only real downside to a grid-based layout is browser support, which again has improved tremendously over the past year. It’s hard to overstate the importance of CSS grid as the first real tool in CSS that was actually designed for layout. In some sense, web designers have always had to be very conservative with making creative layouts, since the tools up until now have been fragile, using various hacks and workarounds. Now that CSS grid exists, there is the potential for a new wave of creative layout designs that never would have been possible before — exciting times!
 
-![Dinosaur comic panel 2](img/1__JGkKSd3Hs7Pq17Qt5xTEzw.png)
+![Dinosaur comic panel 2](/img/1__JGkKSd3Hs7Pq17Qt5xTEzw.png)
 
 ### Using a CSS preprocessor for new syntax
 
@@ -509,7 +509,7 @@ There is a price to pay for this progress, however. Installing and using a CSS p
 
 It’s worth noting that there is some debate around CSS postprocessors. Some argue that the terminology is confusing ([one argument](https://css-tricks.com/the-trouble-with-preprocessing-based-on-future-specs/) is that they should all be called CSS preprocessors, [another argument](https://medium.com/@ddprrt/deconfusing-pre-and-post-processing-d68e3bd078a3) is that they should just be simply called CSS processors, etc.). Some believe CSS postprocessors eliminate the need for CSS preprocessors altogether, some believe they should be used together. In any case, it’s clear that learning how to use a CSS postprocessor is worth it if you’re interested in pushing the edge of what’s possible with CSS.
 
-![Dinosaur comic panels 3 and 4](img/1__53X7__j093ePj9MOxrkA5sw.png)
+![Dinosaur comic panels 3 and 4](/img/1__53X7__j093ePj9MOxrkA5sw.png)
 
 ### Using CSS methodologies for maintainability
 
@@ -559,6 +559,6 @@ So this is modern CSS in a nutshell. We covered **using CSS for basic styling** 
 
 Modern CSS can definitely be frustrating to work with as it continues to change and evolve at a rapid pace. But it’s important to remember the historical context of how the web has evolved over time, and it’s good to know that there are a lot of smart people out there willing to build concrete tools and methodologies to help CSS best practices evolve right along with the web. It’s an exciting time to be a developer, and I hope this information can serve as a roadmap to help you on your journey!
 
-![Dinosaur comic panel 5](img/1__7Z__JtjrzLil6LFrM7lrNJQ.png)
+![Dinosaur comic panel 5](/img/1__7Z__JtjrzLil6LFrM7lrNJQ.png)
 
 _Special thanks again to_ [_@ryanqnorth_](https://twitter.com/ryanqnorth)_’s_ [_Dinosaur Comics_](http://www.qwantz.com/)_, which has served up some of the finest absurdist humor since 2003 (when dinosaurs ruled the web)._

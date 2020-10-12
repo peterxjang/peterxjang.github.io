@@ -5,7 +5,7 @@ date: 2017-05-03
 tags:
 ---
 
-![iPad Pro with Smart Keyboard](img/ipad-pro.jpg)
+![iPad Pro with Smart Keyboard](/img/ipad-pro.jpg)
 _iPad Pro with Smart Keyboard — good enough for web development?_
 
 Apple has always tried to market the iPad Pro as a laptop replacement. This might work out for college students or people in certain professions where the available iOS apps cover their daily needs. However, as a web developer, there are too many command line tools that are necessary on a day-to-day basis that makes it infeasible for an iPad by itself to be a complete laptop replacement.

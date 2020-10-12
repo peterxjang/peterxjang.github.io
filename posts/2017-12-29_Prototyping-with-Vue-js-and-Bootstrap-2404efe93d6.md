@@ -8,7 +8,7 @@ categories: []
 keywords: []
 ---
 
-![Example Bootstrap modal](img/1__UTO3Xix1EbdZXYP4Bam__eg.png)
+![Example Bootstrap modal](/img/1__UTO3Xix1EbdZXYP4Bam__eg.png)
 
 Let’s say you’re in a situation where you want to create a quick prototype frontend for a web application, something you would throw together in a couple of hours. In this scenario it might be overkill to use a [modern build process](modern-javascript-explained-for-dinosaurs.html) with a component-based frontend architecture. One good combo can be to use [Bootstrap](https://getbootstrap.com/) for visuals and [Vue.js](https://vuejs.org/) for interactivity. These frameworks work well for creating prototypes, because they don’t necessarily require any tooling or configuration — you can start with this [Bootstrap HTML template](https://getbootstrap.com/docs/4.0/getting-started/introduction/#starter-template), add the [script tag for Vue.js](https://vuejs.org/v2/guide/#Getting-Started), and you’re good to go!
 
@@ -29,7 +29,7 @@ Here’s a quick example of rendering a list of five items using some basic Boot
 </div>
 ```
 
-![Example Bootstrap button list group](img/1__HFqBoMzEIKl__pZvAGsMHRw.png)
+![Example Bootstrap button list group](/img/1__HFqBoMzEIKl__pZvAGsMHRw.png)
 
 Not too exciting yet (we’ll get there). Now let’s add some Vue.js to render the same list of items dynamically with a loop:
 

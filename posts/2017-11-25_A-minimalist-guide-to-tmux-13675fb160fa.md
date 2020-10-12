@@ -24,7 +24,7 @@ To install tmux, you can run `sudo apt-get install tmux` on Linux with [apt-get]
 $ tmux
 ```
 
-![Terminal running tmux](img/1__Ml8e__M7seNIwHBOEN6wOrw.png)
+![Terminal running tmux](/img/1__Ml8e__M7seNIwHBOEN6wOrw.png)
 
 This looks pretty much identical to the regular terminal, except there’s the green status bar at the bottom. From here we can start running tmux commands to manage terminal windows and sessions.
 
@@ -74,7 +74,7 @@ The above commands are truly all you need to take advantage of the most importan
 
 Most people using tmux tend to use panes, which allows for multiple terminal views within a single window. You can do some crazy customizations with panes:
 
-![Example terminal with tmux panes from reddit.com/r/unixport](img/1__ZVmiTfLBYpTUdh__Tadx__SQ.png)
+![Example terminal with tmux panes from reddit.com/r/unixport](/img/1__ZVmiTfLBYpTUdh__Tadx__SQ.png)
 _From [reddit.com/r/unixporn](https://www.reddit.com/r/unixporn/comments/689wfd/tmux_the_bridge/)_
 
 Panes are definitely cool and can be worth learning, but I would recommend holding off on them to start off to reduce the learning curve of tmux. When you use panes, you’ll need to memorize commands to create panes vertically and horizontally, navigate between panes, resize panes, destroy panes, etc. It will more than double the number of commands you need to memorize to get started! I would use tmux without panes for at least a week or two before trying out a new set of commands.

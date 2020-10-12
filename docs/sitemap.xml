@@ -102,17 +102,22 @@
   </url>
   
   <url>
+    <loc>https://peterxjang.com/</loc>
+    <lastmod>2020-09-28</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://peterxjang.com/page-list/</loc>
+    <lastmod>2020-09-28</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://peterxjang.com/tags/</loc>
+    <lastmod>2020-09-28</lastmod>
+  </url>
+  
+  <url>
     <loc>https://peterxjang.com/blog/</loc>
-    <lastmod>2020-09-28</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://peterxjang.com/blog/page-list/</loc>
-    <lastmod>2020-09-28</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://peterxjang.com/blog/tags/</loc>
-    <lastmod>2020-09-28</lastmod>
+    <lastmod>2020-10-12</lastmod>
   </url>
 </urlset>

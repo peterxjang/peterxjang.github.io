@@ -30,7 +30,7 @@ So to understand the ways different frontend approaches solve the same problem, 
 
 Here is a quick look at what the desktop Mac Notes app looks like to give you a sense of some of the reactive features. Note how the app is reacting immediately in various places as you type:
 
-![Mac notes app](img/1__Za9oW5CKgqdBmbt315Mkjg.gif)
+![Mac notes app](/img/1__Za9oW5CKgqdBmbt315Mkjg.gif)
 
 I generally implement the following features in my web-based clone of the Mac Notes app in this order:
 

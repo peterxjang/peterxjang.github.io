@@ -7,7 +7,7 @@ tags:
 
 #### Examining low level, object oriented, and functional drawing techniques
 
-![[peterxjang.com](http://peterxjang.com)](img/1__CnCD2uzcN4EYbg9__LLupOA.png)
+![[peterxjang.com](http://peterxjang.com)](/img/1__CnCD2uzcN4EYbg9__LLupOA.png)
 _[peterxjang.com](http://peterxjang.com)_
 
 ## The Low Level HTML Canvas API

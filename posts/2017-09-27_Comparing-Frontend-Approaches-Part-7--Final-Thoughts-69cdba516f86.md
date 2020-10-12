@@ -14,7 +14,7 @@ keywords: []
 - [Part 6: Elm](comparing-frontend-approaches-part-6-elm.html)
 - **Part 7: Final thoughts**
 
-![]({{ 'img/1__i1kwW5Jx__F3nYv0AsPlsXg.jpeg' | url }})
+![A row of doors to choose from](/img/1__i1kwW5Jx__F3nYv0AsPlsXg.jpeg)
 
 If you’ve made it this far, congratulations! Here’s a brief summary of the pros and cons of each approach for building this particular notes app:
 

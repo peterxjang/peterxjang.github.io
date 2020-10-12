@@ -8,7 +8,7 @@ categories: []
 keywords: []
 ---
 
-![Images from [Dinosaur Comics](http://www.qwantz.com/) by [Ryan North](https://twitter.com/ryanqnorth)](img/1__H8PH__HaV43gZyBJz0mJHxA.png)
+![Images from [Dinosaur Comics](http://www.qwantz.com/) by [Ryan North](https://twitter.com/ryanqnorth)](/img/1__H8PH__HaV43gZyBJz0mJHxA.png)
 _Images from [Dinosaur Comics](http://www.qwantz.com/) by [Ryan North](https://twitter.com/ryanqnorth)_
 
 Learning modern JavaScript is tough if you haven’t been there since the beginning. The ecosystem is growing and changing so rapidly that it’s hard to understand the problems that different tools are trying to solve. I started programming in 1998 but only began to learn JavaScript seriously in 2014. At the time I remember coming across [Browserify](http://browserify.org/) and staring at its tagline:
@@ -56,7 +56,7 @@ moment().startOf('day').fromNow();        // 20 hours ago
 
 But this is only assuming you include moment.js on your website! On the [homepage for moment.js](http://momentjs.com/) you see the following instructions:
 
-![Install instructions for moment.js](img/1__ef7OX37jr____Jc38ZxO97Iw.png)
+![Install instructions for moment.js](/img/1__ef7OX37jr____Jc38ZxO97Iw.png)
 
 Hmm, there’s a lot of stuff going in the **Install** section on the right. But let’s ignore that for now — we can add moment.js to our website by downloading the **`moment.min.js`** file in the same directory and including it in our **`index.html`** file.
 
@@ -164,7 +164,7 @@ So now we no longer have to manually download moment.js from the website, we can
 
 So the good thing is that we can now use npm to download and update our packages through the command line. The bad thing is right now we’re digging through the **`node_modules`** folder to find the location of each package and manually including it in our HTML. That’s pretty inconvenient, so next we’ll take a look at how to automate that process as well.
 
-![Dinosaur comic panel 2](img/1__GeEETvRqyG4o7SZdbU2Guw.png)
+![Dinosaur comic panel 2](/img/1__GeEETvRqyG4o7SZdbU2Guw.png)
 
 ### Using a JavaScript module bundler (webpack)
 
@@ -174,7 +174,7 @@ This is actually what we’re doing with the above moment.js example — the
 
 In 2009, a project named CommonJS was started with the goal of specifying an ecosystem for JavaScript outside the browser. A big part of CommonJS was its specification for modules, which would finally allow JavaScript to import and export code across files like most programming languages, without resorting to global variables. The most well-known of implementation of CommonJS modules is node.js.
 
-![Node.js logo](img/1__xeF1flp1zDLLJ4j7rDQ6__Q.png)
+![Node.js logo](/img/1__xeF1flp1zDLLJ4j7rDQ6__Q.png)
 
 As mentioned earlier, node.js is a JavaScript runtime designed to run on the server. Here’s what the earlier example would look like using node.js modules. Instead of loading all of **`moment.min.js`** with an HTML script tag, you can load it directly in the JavaScript file as follows:
 
@@ -274,7 +274,7 @@ We don’t need to specify the `index.js` and `--mode=development` options anymo
 
 Overall, this may not seem like much, but there are some huge advantages to this workflow. We are no longer loading external scripts via global variables. Any new JavaScript libraries will be added using `require` statements in the JavaScript, as opposed to adding new `<script>` tags in the HTML. Having a single JavaScript bundle file is often better for performance. And now that we added a build step, there are some other powerful features we can add to our development workflow!
 
-![Dinosaur comic panels 3 and 4](img/1__ee__ivxNTKgIJTjmEMC4__dg.png)
+![Dinosaur comic panels 3 and 4](/img/1__ee__ivxNTKgIJTjmEMC4__dg.png)
 
 ### Transpiling code for new language features (babel)
 
@@ -468,6 +468,6 @@ Even better for beginners and experienced developers alike is that frameworks th
 
 Modern JavaScript can definitely be frustrating to work with as it continues to change and evolve at a rapid pace. But even though it may seem at times like re-inventing the wheel, JavaScript’s rapid evolution has helped push innovations such as hot reloading, real-time linting, and time-travel debugging. It’s an exciting time to be a developer, and I hope this information can serve as a roadmap to help you on your journey!
 
-![Dinosaur comic panel 5](img/1__H6NN__RxZNeVyLYpCirsslg.png)
+![Dinosaur comic panel 5](/img/1__H6NN__RxZNeVyLYpCirsslg.png)
 
 _Special thanks to_ [_@ryanqnorth_](https://twitter.com/ryanqnorth)_’s_ [_Dinosaur Comics_](http://www.qwantz.com/)_, which has served up some of the finest absurdist humor since 2003 (when dinosaurs ruled the web)._

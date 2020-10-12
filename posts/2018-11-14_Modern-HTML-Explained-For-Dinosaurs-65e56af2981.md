@@ -8,7 +8,7 @@ categories: []
 keywords: []
 ---
 
-![Dinosaur comic panel 1](img/1__EEHKg3z__FAk0ipZDFuWKcw.png)
+![Dinosaur comic panel 1](/img/1__EEHKg3z__FAk0ipZDFuWKcw.png)
 _Images from [Dinosaur Comics](http://www.qwantz.com/) by [Ryan North](https://twitter.com/ryanqnorth)_
 
 Out of the three main frontend technologies (HTML, CSS, and JavaScript), HTML has remained the most consistent. If your only concern was creating content, an HTML document from the 1990s would look pretty similar to one created in 2018:
@@ -229,7 +229,7 @@ All this may seem like a lot of work just to improve the accessibility of a webs
 
 If we take a look at the website so far, it looks pretty bare as you would expect:
 
-![Example website without styling](img/1__VCXY__h9ynSUJ__9piFx9ATA.png)
+![Example website without styling](/img/1__VCXY__h9ynSUJ__9piFx9ATA.png)
 
 In order to spruce it up, we’ll add a CSS file to apply styling. Now if you’re not particularly good at CSS, it could take you many days to make this website look pretty. Instead of writing your own CSS, you could always use a CSS framework, which is essentially CSS that someone else wrote in a reusable manner.
 
@@ -287,7 +287,7 @@ Let’s examine the changes:
 
 Here’s what the site looks like now:
 
-![Example website with Bootstrap styling](img/1__fO1wXfiWfdv8vY3__qeQv0A.png)
+![Example website with Bootstrap styling](/img/1__fO1wXfiWfdv8vY3__qeQv0A.png)
 
 Not bad! Note that in order to use a CSS framework like Bootstrap, you actually don’t need to write any CSS at all to get started — you just need to add the appropriate classes to the HTML to take advantage of the CSS that comes with the framework.
 
@@ -309,7 +309,7 @@ Also, with the rise of smartphones and mobile traffic, reducing CSS and JS file 
 
 > Note: A solid grasp of CSS and JavaScript is intrinsically linked to making sophisticated websites with HTML; however, a deep dive into these languages is outside the scope of this article. If you’d like to learn more about the fundamentals of CSS and JavaScript, the [MDN Web Docs](https://developer.mozilla.org/en-US/) are always a good place to start. If you want to get a better understanding of how all the newer features of CSS (flexbox, grid, SASS, etc.) fit together with all the tooling and techniques involved with it, check out my article [Modern CSS Explained For Dinosaurs](modern-css-explained-for-dinosaurs.html).
 
-![Dinosaur comic panel 2](img/1__ytCirVt0CqnH8wNUX__6vcA.png)
+![Dinosaur comic panel 2](/img/1__ytCirVt0CqnH8wNUX__6vcA.png)
 
 ### Improving performance with HTML attributes
 
@@ -319,7 +319,7 @@ At this point we have a website with reasonably well organized, semantic HTML. A
 
 For our website, one major optimization is to address the JavaScript files that are being loaded in the header. These files are large enough to actually slow down the website. In order to render a page, a web browser reads the given HTML and converts it into a format it understands — the [Document Object Model](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction), or DOM. As you might expect, a web browser starts at the top of the HTML document and works its way down. That means if it sees a `<script>` tag, it will download and execute the script before moving on to the next line. You can see an illustration of this process here:
 
-![Diagram of JavaScript normal loading order](img/1__qo7CQsQCd__QYJchbCXLj__w.png)
+![Diagram of JavaScript normal loading order](/img/1__qo7CQsQCd__QYJchbCXLj__w.png)
 _(From [hacks.mozilla.org](https://hacks.mozilla.org/2017/09/building-the-dom-faster-speculative-parsing-async-defer-and-preload/))_
 
 A common optimization hack is to move all JavaScript `<script>` tags out of the `<head>` tag and into the end of the `<body>` tag. You can see this in Bootstrap’s own [starter template](https://getbootstrap.com/docs/4.1/getting-started/introduction/#starter-template):
@@ -347,7 +347,7 @@ This a optimization is a hack in the sense that this isn’t how HTML was design
 
 In 2018, many websites still use this trick of moving all `<script>` tags to the bottom of the `<body>` tag. However, there is a less hacky approach that has been supported by browsers for nearly 10 years — the `defer` attribute. By adding this attribute to a `<script>` tag, the browser will download the external file without blocking the rest of the DOM from being built, and will execute the script after the DOM building is complete. You can see an illustration of this process here:
 
-![Diagram of JavaScript with defer attribute loading order](img/1__GhpdG7JTaVJ6nbbaVLkSLg.png)
+![Diagram of JavaScript with defer attribute loading order](/img/1__GhpdG7JTaVJ6nbbaVLkSLg.png)
 _(From [hacks.mozilla.org](https://hacks.mozilla.org/2017/09/building-the-dom-faster-speculative-parsing-async-defer-and-preload/))_
 
 In many cases, keeping `<script>` tags in the `<head>` with a `defer` attribute would result in faster loading pages, since the files can be downloaded in parallel with the DOM being built. This is what Bootstrap’s starter template would look like using the defer attribute instead:
@@ -475,7 +475,7 @@ To concatenate your files, you _theoretically_ could do it manually — copy
 
 One more optimization popularized in recent years is inlining the **critical CSS** for a page. This involves using a tool to identify all the HTML elements that the user would first see when going to a web page:
 
-![Example website labelling critical portion](img/1__eqFRbhOchUMNGLj9lisEqQ.jpeg)
+![Example website labelling critical portion](/img/1__eqFRbhOchUMNGLj9lisEqQ.jpeg)
 _From [https://www.smashingmagazine.com/2015/08/understanding-critical-css/](https://www.smashingmagazine.com/2015/08/understanding-critical-css/)_
 
 Once these HTML elements are identified, the tool would find all the CSS that affect those elements and add them directly to the HTML file. In this way, the browser is able to display a fully styled website without having to wait for the remaining CSS to download!
@@ -530,13 +530,13 @@ To implement a build step, you’ll need to pick a tool, and there are many to c
 
 > **Note**: Using tools for a build step can be quite daunting to learn from scratch. Most tools require you to use the command line — if you’ve never used one before, you can read [this tutorial](https://www.learnenough.com/command-line-tutorial) to get a good overview to get started. Many of the popular web developer build tools in 2018 are based on node.js — if you’re unfamiliar with the node.js ecosystem and its use in frontend development, you can read my article [Modern JavaScript Explained For Dinosaurs](https://medium.com/the-node-js-collection/modern-javascript-explained-for-dinosaurs-f695e9747b70) for an overview of that as well.
 
-![Dinosaur comic panels 3 and 4](img/1__GbAw9ahi__dxD6LBA6Kh0__g.png)
+![Dinosaur comic panels 3 and 4](/img/1__GbAw9ahi__dxD6LBA6Kh0__g.png)
 
 ### Improving maintainability with templates and components
 
 So far we have a decent web page, both reasonably attractive and performant. Right now it looks like this:
 
-![Example website with Bootstrap styling](img/1__fO1wXfiWfdv8vY3__qeQv0A.png)
+![Example website with Bootstrap styling](/img/1__fO1wXfiWfdv8vY3__qeQv0A.png)
 
 In the navbar, there’s a link to an About page, but it currently doesn’t go anywhere. What if we wanted to make this About page? The most straightforward answer would be to make a copy of the `index.html` called `about.html`, and update the content accordingly. Specifically, the content in the `<main>` element would change, and the rest of the HTML would remain unchanged. Here’s what a simple `about.html` page would look like:
 
@@ -640,7 +640,7 @@ So here you can see that the only part that changes is the content in the middle
 
 The above code is obviously not valid HTML — you need some sort of build step to replace the `include` statements with the HTML from the separate files. We actually could incorporate it into the build step that we previously saw (for code minification, file concatenation, critical CSS, etc.). However, this step of generating HTML from templates has traditionally been done dynamically on the server.
 
-![Diagram of client server model](img/1__3fBZ27QgR7eDCoPTjam6nw.png)
+![Diagram of client server model](/img/1__3fBZ27QgR7eDCoPTjam6nw.png)
 _From [wikipedia.org](https://en.wikipedia.org/wiki/Client%E2%80%93server_model)_
 
 A **server** is the computer that receives web requests and sends back HTML/CSS/JS as a web response (as opposed to the **client,** the computer with the web browser that initiates the web request). A server is generally responsible for creating dynamic HTML based on data in a database. For example, if you search for “red bananas” on [www.google.com](http://www.google.com), there isn’t some unique HTML file just about red bananas that gets sent to you from a server. Instead, the server runs code to dynamically create an HTML response based on your search terms. So here you can kill two birds with one stone — since you’re already have a step to generate dynamic HTML on the server, you can use templates to define the generated HTML to keep your code DRY.
@@ -720,7 +720,7 @@ So far in this example, there isn’t much advantage to this approach over the s
 
 You would get a video player that looks like this:
 
-![Example HTML video element](img/1__3pRSQmwBda1IeFo1Smrg__A.png)
+![Example HTML video element](/img/1__3pRSQmwBda1IeFo1Smrg__A.png)
 _(this is a picture of a video, not an actual video)_
 
 The `<video>` element comes with its own JavaScript interactive controls and CSS styling which are isolated from the rest of the page. This means when you use a `<video>` element, you don’t have to worry about it affecting the styles or functionality of your site, and you also don’t have to worry about any of the CSS or JavaScript from the site breaking the video component.
@@ -801,7 +801,7 @@ Looking at it from a high level can sometimes be discouraging — what used 
 
 Modern HTML can definitely be frustrating to work with as it continues to change and evolve at a rapid pace. Yet we’re able to do more now than ever before, and we are all essentially at the ground floor of a new industry with the potential to shape it into the platform we want it to become. It’s an exciting time to be a developer, and I hope this information can serve as a roadmap to help you on your journey!
 
-![Dinosaur comic panel 5](img/1__fHND__kRQTWkLMFlOwbZNrw.png)
+![Dinosaur comic panel 5](/img/1__fHND__kRQTWkLMFlOwbZNrw.png)
 
 _Special thanks to_ [_@ryanqnorth_](https://twitter.com/ryanqnorth)_’s_ [_Dinosaur Comics_](http://www.qwantz.com/)_, which has served up some of the finest absurdist humor since 2003 (when dinosaurs ruled the web)._
 

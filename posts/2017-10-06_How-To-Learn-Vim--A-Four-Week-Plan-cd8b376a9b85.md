@@ -8,7 +8,7 @@ categories: []
 keywords: []
 ---
 
-![Vim with custom color scheme, syntax highlighting, linting, and autocomplete](img/1__b8yLTUhLfIcdcqbPOGQSxA.png)
+![Vim with custom color scheme, syntax highlighting, linting, and autocomplete](/img/1__b8yLTUhLfIcdcqbPOGQSxA.png)
 _Vim with custom color scheme, syntax highlighting, linting, and autocomplete_
 
 Vim is a command line text editor that is notorious for being hard to learn (the running joke is to generate a truly random string, put a web developer in front of Vim and tell them to exit). So why bother learning it, especially if you’re already comfortable with your text editor or IDE? Some benefits to learning Vim include:

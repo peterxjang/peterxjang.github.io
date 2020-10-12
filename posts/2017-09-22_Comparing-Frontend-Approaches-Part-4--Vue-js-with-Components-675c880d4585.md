@@ -64,7 +64,7 @@ $ cd my-project$ npm run serve
 
 The last command will run a dev server and automatically open up your browser to `localhost:8080`, where you should see something like this:
 
-![Default vue-cli home page](img/1__L90vI1YkeijHlo____WEmdsw.png)
+![Default vue-cli home page](/img/1__L90vI1YkeijHlo____WEmdsw.png)
 
 This is pretty cool, and what’s cooler is that you have a hot-reloading environment already set up for you. What that means is that if you make changes to your code, the browser at `localhost:8080` will automatically refresh. The place to start making changes is **`src/App.vue`**, which right now looks like this:
 

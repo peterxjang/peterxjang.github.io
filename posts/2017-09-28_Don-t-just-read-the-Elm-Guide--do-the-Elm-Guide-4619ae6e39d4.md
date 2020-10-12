@@ -8,7 +8,7 @@ keywords: []
 
 Recently I’ve been teaching myself the [Elm programming language](http://elm-lang.org/), something I’ve been wanting to do ever since I saw the [Elm Debugger: Mario](http://debug.elm-lang.org/edit/Mario.elm) example in 2014. About 100 lines of code with sprite animation, keyboard input, and a time-traveling debugger — this really blew me away, I had never seen anything like it!
 
-![Elm game with time-traveling debugger](img/1__yPn19xbe1wjCo2c4os__vDA.gif)
+![Elm game with time-traveling debugger](/img/1__yPn19xbe1wjCo2c4os__vDA.gif)
 
 I put off really digging into Elm for various reasons — there were a lot of new concepts, the [formatting style](http://elm-lang.org/docs/style-guide) (particularly commas on new lines) was pretty jarring to me, etc. Recently, I’ve heard several people describe the best way to learn Elm is **not** focus on theory or syntax — instead just start to build stuff using [The Elm Architecture](https://guide.elm-lang.org/architecture/), a structured pattern to building Elm apps, and learn along the way.
 
