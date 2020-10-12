@@ -17,6 +17,9 @@ pre[class*="language-"] {
   background: #272822;
   color: #f8f8f2;
 }
+pre {
+  overflow: auto;
+}
 pre[class*="language-"] {
   padding: 1em;
   margin: 2em 0;
