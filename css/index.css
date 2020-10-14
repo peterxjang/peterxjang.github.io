@@ -26,11 +26,16 @@ body {
 .post-title {
   margin-bottom: 2em;
 }
+main > p {
+  margin-top: 0.5em;
+}
 main > h2 {
   margin-top: 3em;
 }
-main > h3 {
+main > h3,
+main > h4 {
   margin-top: 2em;
+  margin-bottom: 0;
 }
 main > blockquote {
   background: #f9f9f9;
