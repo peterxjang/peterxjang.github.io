@@ -71,6 +71,10 @@ img[src*="#medium"] {
   margin-left: auto;
   margin-right: auto;
 }
+img.avatar {
+  width: 7em;
+  border-radius: 100%;
+}
 p,
 .tmpl-post li {
   line-height: 1.65;
@@ -81,7 +85,8 @@ a[href] {
 a[href]:visited {
   color: var(--navy);
 }
-main {
+main,
+footer > div {
   padding: 1rem;
   margin: 0 auto;
   line-height: 1.2;
@@ -173,6 +178,20 @@ pre {
 }
 .home :link:not(:hover) {
   text-decoration: none;
+}
+
+/* Footer */
+footer {
+  background-color: rgb(245, 245, 245);
+}
+footer h4 {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  font-size: 1.5em;
+}
+footer p {
+  margin-top: 0;
+  font-weight: 300;
 }
 
 /* Nav */
