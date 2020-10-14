@@ -319,7 +319,7 @@ At this point we have a website with reasonably well organized, semantic HTML. A
 
 For our website, one major optimization is to address the JavaScript files that are being loaded in the header. These files are large enough to actually slow down the website. In order to render a page, a web browser reads the given HTML and converts it into a format it understands — the [Document Object Model](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction), or DOM. As you might expect, a web browser starts at the top of the HTML document and works its way down. That means if it sees a `<script>` tag, it will download and execute the script before moving on to the next line. You can see an illustration of this process here:
 
-![Diagram of JavaScript normal loading order](/img/1__qo7CQsQCd__QYJchbCXLj__w.png)
+![Diagram of JavaScript normal loading order](/img/1__qo7CQsQCd__QYJchbCXLj__w.png#medium)
 _(From [hacks.mozilla.org](https://hacks.mozilla.org/2017/09/building-the-dom-faster-speculative-parsing-async-defer-and-preload/))_
 
 A common optimization hack is to move all JavaScript `<script>` tags out of the `<head>` tag and into the end of the `<body>` tag. You can see this in Bootstrap’s own [starter template](https://getbootstrap.com/docs/4.1/getting-started/introduction/#starter-template):
@@ -347,7 +347,7 @@ This a optimization is a hack in the sense that this isn’t how HTML was design
 
 In 2018, many websites still use this trick of moving all `<script>` tags to the bottom of the `<body>` tag. However, there is a less hacky approach that has been supported by browsers for nearly 10 years — the `defer` attribute. By adding this attribute to a `<script>` tag, the browser will download the external file without blocking the rest of the DOM from being built, and will execute the script after the DOM building is complete. You can see an illustration of this process here:
 
-![Diagram of JavaScript with defer attribute loading order](/img/1__GhpdG7JTaVJ6nbbaVLkSLg.png)
+![Diagram of JavaScript with defer attribute loading order](/img/1__GhpdG7JTaVJ6nbbaVLkSLg.png#medium)
 _(From [hacks.mozilla.org](https://hacks.mozilla.org/2017/09/building-the-dom-faster-speculative-parsing-async-defer-and-preload/))_
 
 In many cases, keeping `<script>` tags in the `<head>` with a `defer` attribute would result in faster loading pages, since the files can be downloaded in parallel with the DOM being built. This is what Bootstrap’s starter template would look like using the defer attribute instead:
@@ -475,7 +475,7 @@ To concatenate your files, you _theoretically_ could do it manually — copy
 
 One more optimization popularized in recent years is inlining the **critical CSS** for a page. This involves using a tool to identify all the HTML elements that the user would first see when going to a web page:
 
-![Example website labelling critical portion](/img/1__eqFRbhOchUMNGLj9lisEqQ.jpeg)
+![Example website labelling critical portion](/img/1__eqFRbhOchUMNGLj9lisEqQ.jpeg#medium)
 _From [https://www.smashingmagazine.com/2015/08/understanding-critical-css/](https://www.smashingmagazine.com/2015/08/understanding-critical-css/)_
 
 Once these HTML elements are identified, the tool would find all the CSS that affect those elements and add them directly to the HTML file. In this way, the browser is able to display a fully styled website without having to wait for the remaining CSS to download!
@@ -640,7 +640,7 @@ So here you can see that the only part that changes is the content in the middle
 
 The above code is obviously not valid HTML — you need some sort of build step to replace the `include` statements with the HTML from the separate files. We actually could incorporate it into the build step that we previously saw (for code minification, file concatenation, critical CSS, etc.). However, this step of generating HTML from templates has traditionally been done dynamically on the server.
 
-![Diagram of client server model](/img/1__3fBZ27QgR7eDCoPTjam6nw.png)
+![Diagram of client server model](/img/1__3fBZ27QgR7eDCoPTjam6nw.png#medium)
 _From [wikipedia.org](https://en.wikipedia.org/wiki/Client%E2%80%93server_model)_
 
 A **server** is the computer that receives web requests and sends back HTML/CSS/JS as a web response (as opposed to the **client,** the computer with the web browser that initiates the web request). A server is generally responsible for creating dynamic HTML based on data in a database. For example, if you search for “red bananas” on [www.google.com](http://www.google.com), there isn’t some unique HTML file just about red bananas that gets sent to you from a server. Instead, the server runs code to dynamically create an HTML response based on your search terms. So here you can kill two birds with one stone — since you’re already have a step to generate dynamic HTML on the server, you can use templates to define the generated HTML to keep your code DRY.

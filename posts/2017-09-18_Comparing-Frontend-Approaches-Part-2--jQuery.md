@@ -14,7 +14,7 @@ keywords: []
 - [Part 6: Elm](comparing-frontend-approaches-part-6-elm.html)
 - [Part 7: Final thoughts](comparing-frontend-approaches-part-7-final-thoughts.html)
 
-![jQuery logo](/img/1__7aM1iGhORpH__edtcYbtQsA.png)
+![jQuery logo](/img/1__7aM1iGhORpH__edtcYbtQsA.png#medium)
 
 In this part we will be implementing the [web based clone](comparing-frontend-approaches-part-1-introduction.html) of the [Mac Notes app](https://support.apple.com/kb/PH22608?locale=en_US) using [jQuery](https://jquery.com/). jQuery is a JavaScript library that came out in 2006, and within several years became the most popular JavaScript library in use on the web (used by [70% of the top 100,000](http://trends.builtwith.com/javascript/jQuery) sites online).
 

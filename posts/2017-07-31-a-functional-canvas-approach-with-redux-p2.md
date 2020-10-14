@@ -89,7 +89,7 @@ draw();
 
 The result looks like:
 
-![Red and blue rectangles dragged together on an HTML canvas](/img/1__xOERmseqNFdIrfRVXN__YNg.gif)
+![Red and blue rectangles dragged together on an HTML canvas](/img/1__xOERmseqNFdIrfRVXN__YNg.gif#medium)
 
 Here we’re using three event listeners. On `mousedown`, we store the user’s mouse position. On `mousemove`, we update the `canvasX` and `canvasY` variables based on the change in mouse position, redraw the canvas based on those updated values, and update the stored mouse position. On `mouseup`, we clear the stored mouse position (so we can determine whether or not the mouse is down).
 
@@ -245,7 +245,7 @@ This is a copy of the original state with updated xDragging and yDragging values
 
 Redux may be more difficult to wire together and understand initially, but this clear separation of data and rendering code makes it easier to add new features over time. Note that the code no longer has stray variables that can be mutated anywhere — all the relevant data is stored in the Redux state, and the only way it can be changed is by dispatching a Redux action. Let’s add another feature to our Redux example — translating individual items. The final result will look like:
 
-![Red and blue rectangles dragged separately on an HTML canvas](/img/1__3KL872omMJcQhloXLjq__tg.gif)
+![Red and blue rectangles dragged separately on an HTML canvas](/img/1__3KL872omMJcQhloXLjq__tg.gif#medium)
 
 Let’s take a look at the changes needed to make this feature work. First, the shape of the state changed to include ids for each item, which we use to keep track of which item is being dragged with `draggingItemId`. Initially no item is being dragged, so `draggingItemId` is set to null. 
 

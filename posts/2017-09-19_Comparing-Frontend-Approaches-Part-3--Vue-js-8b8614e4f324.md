@@ -14,7 +14,7 @@ keywords: []
 - [Part 6: Elm](comparing-frontend-approaches-part-6-elm.html)
 - [Part 7: Final thoughts](comparing-frontend-approaches-part-7-final-thoughts.html)
 
-![Vue.js logo](/img/vuejs-wide.png)
+![Vue.js logo](/img/vuejs-wide.png#medium)
 
 In this part we will be implementing the [web based clone](comparing-frontend-approaches-part-1-introduction.html) of the [Mac Notes app](https://support.apple.com/kb/PH22608?locale=en_US) using [Vue.js](https://vuejs.org/). Vue.js is a JavaScript framework that came out in 2014 and has recently become one of the most popular frameworks in a very crowded market. It currently has over 65,000 stars on GitHub, which makes it the second most popular JavaScript framework (React being the first).
 

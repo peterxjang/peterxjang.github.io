@@ -14,7 +14,7 @@ keywords: []
 - **Part 6: Elm**
 - [Part 7: Final thoughts](comparing-frontend-approaches-part-7-final-thoughts.html)
 
-![](/img/1__NQppPMuv7xYB1IB4hF4AnQ.png)
+![Elm logo](/img/1__NQppPMuv7xYB1IB4hF4AnQ.png#medium)
 
 In this part we will be implementing the [web based clone](comparing-frontend-approaches-part-1-introduction.html) of the [Mac Notes app](https://support.apple.com/kb/PH22608?locale=en_US) using [Elm](http://elm-lang.org/). Elm (which is not a JavaScript framework but a completely different language that compiles down to JavaScript) came out in 2012 and is currently gaining a lot of traction, with more and more companies [using it in production](https://github.com/lpil/elm-companies).
 

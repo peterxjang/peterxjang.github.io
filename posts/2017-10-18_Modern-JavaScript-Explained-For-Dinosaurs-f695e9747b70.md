@@ -174,7 +174,7 @@ This is actually what we’re doing with the above moment.js example — the
 
 In 2009, a project named CommonJS was started with the goal of specifying an ecosystem for JavaScript outside the browser. A big part of CommonJS was its specification for modules, which would finally allow JavaScript to import and export code across files like most programming languages, without resorting to global variables. The most well-known of implementation of CommonJS modules is node.js.
 
-![Node.js logo](/img/1__xeF1flp1zDLLJ4j7rDQ6__Q.png)
+![Node.js logo](/img/1__xeF1flp1zDLLJ4j7rDQ6__Q.png#medium)
 
 As mentioned earlier, node.js is a JavaScript runtime designed to run on the server. Here’s what the earlier example would look like using node.js modules. Instead of loading all of **`moment.min.js`** with an HTML script tag, you can load it directly in the JavaScript file as follows:
 
