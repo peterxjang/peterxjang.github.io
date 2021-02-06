@@ -1,7 +1,8 @@
 ---
-title: An Introduction to Ortholinear Keyboards
+title: Your First Custom Ortholinear Keyboard
 description: >-
-  A complete guide to easing yourself into the world of custom ortholinear keyboards
+  Everything you need to know to build a custom ortholinear keyboard
+image: /img/xd75re.jpg
 date: 2021-02-05
 categories: []
 keywords: []
@@ -10,11 +11,13 @@ keywords: []
 ![Custom ortholinear keyboard](/img/xd75re.jpg)
 _Custom ortholinear keyboard by [u/ImportedGuy](https://www.reddit.com/user/ImportedGuy/) from [r/mk](https://www.reddit.com/r/MechanicalKeyboards/comments/8tjau8/dsa_legacy_on_the_xd75re/)_
 
-If you're a person who types on a keyboard for most of the day, then you may have come across the world of custom keyboard enthusiasts. One of the notable keyboard communities is the [mechanical keyboards subreddit](https://reddit.com/r/MechanicalKeyboards). You'll find a dizzying array of customization options, from switches to keycaps to keyboard layouts. Some of these customizations are purely cosmetic, some are in search of a particular tactile or aural aesthetic, and some are for improved ergonomics. 
+If you're a person who types on a keyboard for most of the day, then you may have come across the world of custom keyboard enthusiasts. One notable keyboard community is [Reddit's mechanical keyboards subreddit](https://reddit.com/r/MechanicalKeyboards), where you'll find a dizzying array of customization options, from switches to keycaps to keyboard layouts. Some of these customizations are purely cosmetic, some are in search of a particular tactile or aural aesthetic, and some are for improved ergonomics. 
 
 ### Staggered vs Ortholinear Layout
 
-One interesting customization from the world of custom keyboards is an ortholinear layout. An ortholinear layout has all the keys organized in a straight up and down grid, as opposed to the staggered layout of traditional keyboards. Here is a traditional staggered keyboard layout:
+One interesting customization from the world of custom keyboards is an ortholinear layout. An ortholinear layout has all the keys organized in a straight up and down grid, as opposed to the staggered layout of traditional keyboards. 
+
+Here is a traditional staggered keyboard layout:
 
 ![Staggered keyboard with finger positions](/img/typing-practice.jpg#medium)
 
@@ -22,7 +25,9 @@ Note the color coding based on finger positions. For proper touch typing, each f
 
 ![Typewriter patent](/img/typewriter.png#medium)
 
-So most modern computer keyboards are designed with this staggered layout due to [path dependency](https://en.wikipedia.org/wiki/Path_dependence); it's just what people are used to. Once you realize this, it's hard not to ask the question "What would it be like to use a keyboard without any staggering?" Enter the ortholinear layout:
+So most modern computer keyboards are designed with this staggered layout due to [path dependency](https://en.wikipedia.org/wiki/Path_dependence); it's just what people are used to. Once you realize this, it's hard not to ask the question "What would it be like to use a keyboard without any staggering?" 
+
+Enter the ortholinear layout:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/bEPg8kk84gw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -30,37 +35,38 @@ From what I can tell, the term "ortholinear" was invented by Jack Humbert, who c
 
 ### The ortholinear learning curve
 
-I switched to using ortholinear keyboards about a year ago, and I personally have found it to be a better typing experience. I can't necessarily say it's more ergonomic, since I didn't have any significant pain or discomfort from a traditionally staggered keyboard. But I can say it's more fun for me to type on an ortholinear layout, particularly if you're adhering to the touch typing finger responsibilities shown earlier. Typing on an ortholinear keyboard helps you eliminate bad habits where you may use the wrong finger for certain letters. To me it feels like playing a video game where the controls are well designed. 
-
-However, not everyone has the same positive experience when switching to an ortholinear layout. I've come across multiple reviews of different ortholinear keyboards where the reviewer said the layout change was too much of a learning curve, and they prefer the staggered layout. Here are some example video reviews which discuss just how difficult the switch can be:
+Before getting into how to build a custom ortholinear keyboard, it's worth mentioning the learning curve. I've come across multiple reviews of different ortholinear keyboards where the reviewer said the layout change was too much of a learning curve, and they prefer the staggered layout. Here are some example video reviews which discuss just how difficult the switch can be:
 
 * [Rhinofeed's Planck review](https://www.youtube.com/watch?v=DdXA1D8y4TI)
 * [Chryosan's Planck review](https://www.youtube.com/watch?v=YyoB9rEzOeY)
 * [Laptop Retrospective's GergoPlex review](https://www.youtube.com/watch?v=TpJQtzaThmM)
 * [Jarred Walton's Kinesis Advantage review](https://www.youtube.com/watch?v=dJMl4O6uO9M)
 
-The way I see it, these reviewers struggle with the learning curve because they're changing multiple factors at the same time. Not only was it someone's first time using a non-staggered ortholinear layout, but they were also using blank keycaps without any labels for the first time, or using a 40% keyboard with fewer keys for the first time, etc. Changing multiple factors at the same time is not at all ideal from a learning perspective, so it's not hard to see why people have difficulty adjusting.
+This wasn't at all similar to my experience with my first ortholinear keyboard. It took me about a day before I was just as fast on my new keyboard, and I was also able to switch between an ortholinear layout and my laptop's staggered layout without any issue. This is because my first ortholinear board was the [XD75re](https://kprepublic.com/products/xd75re-xd75am-xd75-xiudi-60-custom-keyboard-pcb?variant=958306058284), which has plenty of keys (5 rows and 15 columns), so I was able to create a layout that was nearly identical to a traditional keyboard. 
 
-If you're interested in trying an ortholinear layout, I would suggest trying a keyboard with labeled keycaps and at least 5 rows and 13 columns. As a comparison, a Planck has 4 rows and 12 columns, often with blank keycaps. This is a tough learning curve, because you'll be missing your number row, and a lot of symbols, such as -, +, [, ], etc. The way the Planck makes up for this is with layers (as described in the video reviews), which is a whole other factor to get used to. The Planck was designed this way to minimize finger travel (your fingers are never more than one key away from any key), but it will most likely take weeks to learn and get back up to your normal typing speed. 
+First let's look at the default layout on a Planck keyboard:
 
-It's not just the Planck - keyboards like the Kinesis Advantage have plenty of keys (5 rows and 12 columns, plus a function row and thumb clusters), but the layout is still very different than a traditional keyboard layout. What I've noticed is that nearly every available ortholinear keyboard has only 12 columns for the sake of symmetry (6 columns for each hand). But you need at least 13 columns to have a layout that has all the symbols in a position that you would be used to.
+![Default layout on the Planck keyboard](/img/planck-layout.png)
 
-So if you're interested in just trying an ortholinear layout without having to relearn everything else, you need a board with at least 5 rows and 13 columns. This was the case for my first ortholinear keyboard, and it only took about a day or two for me to get used to the ortholinear layout. As I mentioned, there are very few keyboards that meet this requirement. The one I would recommend is the [XD75re](https://kprepublic.com/products/xd75re-xd75am-xd75-xiudi-60-custom-keyboard-pcb?variant=958306058284), which has 5 rows and 15 columns. This means you can have an ortholinear layout that looks like this:
+The Planck has 4 rows and 12 columns, which means you're missing your number row and a lot of symbols. In order to type numbers, you'll need to hold down the Raise key, which activates the color-coded layer. Other symbols require holding the Lower key. The reasoning here is to keep every single key no more than one key away from your home row position, which is ideal from a touch typing perspective. But there is a huge learning curve involved with switching to a keyboard like this! The Planck allows you to customize your layout any way you want, but in the end you'll have to relearn where your numbers and symbols are located using several layers.
+
+Now let's look at a layout on the XD75re:
 
 ![Custom layout for XD75 keyboard](/img/xd75-layout1.png)
 
-This layout uses 14 columns, with extra keys left over to customize as you see fit. The only key that is moved is the escape key, which I moved to the normal location of the caps lock key (you can actually customize this keyboard's firmware such that the key is control on hold, escape on release). 
+This layout uses 14 columns, with extra keys left over to customize as you see fit. The only key that is moved is the escape key, which I moved to the normal location of the caps lock key (you can actually customize this keyboard's firmware such that the key is control on hold, escape on release). The most important thing is that you aren't required to use any layers to access your numbers or symbols (except for your function keys, which can map directly on your number keys). 
 
-If you are okay with moving 2 more keys around, you could have a layout like this instead:
+Notice that the space bar takes up a huge number of keys, which isn't necessary. If you are okay with moving 2 more keys around, you could have a layout like this instead:
 
 ![Custom layout for XD75 keyboard](/img/xd75-layout2.png)
 
 This layout uses 13 columns, with 2 extra columns in the middle and a couple of unused keys on the bottom to customize as you see fit. The extra two columns in the middle creates some space between your hands, which I find to be a little more comfortable. Only 3 keys are out of their normal positions, so it's pretty easy to get used to this layout. The point is that this particular keyboard gives you the flexibility to start with a traditional layout so you can focus on getting used to a non-staggered ortholinear layout. Once you feel comfortable, you can customize your layout to your heart's content!
 
+If you're interested in trying an ortholinear layout, I would suggest trying a keyboard with labeled keycaps and at least 5 rows and 13 columns. Most available ortholinear keyboards have 12 columns, which keeps things symmetric (6 columns for each hand), but immediately requires repositioning several symbol keys on layers. You'll have a much easier time learning an ortholinear layout if you don't have to memorize new layer layouts at the same time. You can always add layers and optimize your layout with a larger keyboard as well, so it's a win-win!
 
 ### Building a keyboard from scratch
 
-The only downside here is that the XD75re does not come as a prebuilt keyboard, you would need to source your own parts and assemble it yourself. Fortunately, this is all a lot easier than it sounds, because the XD75re board has all components already soldered on it. This means all you need to do is purchase the right parts and put it all together, no wiring or soldering necessary! This video does a good job of breaking down all the possibilities when it comes to building your own mechanical keyboard:
+The only downside with the XD75re is that it does not come as a prebuilt keyboard, you'll need to source your own parts and assemble it yourself. Fortunately, this is all a lot easier than it sounds, because the XD75re board has all components already soldered on it. This means all you need to do is purchase the right parts and put it all together, no wiring or soldering necessary! This video does a good job of breaking down all the possibilities when it comes to building your own mechanical keyboard:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/1NpNygIrnaQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
