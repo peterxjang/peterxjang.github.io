@@ -76,7 +76,7 @@ This particular build is as simple as it gets, since the XD75re is a hot-swap PC
 
 * PCB (KPRepublic sells the [XD75re](https://kprepublic.com/products/xd75re-xd75am-xd75-xiudi-60-custom-keyboard-pcb?variant=958306058284))
 * Case (the XD75re can theoretically fit in any 60% case, [this one](https://kprepublic.com/products/stainless-steel-bent-case-for-xd75re-60-custom-keyboard-acrylic-panels-acrylic-diffuser?_pos=31&_sid=625d1f5a9&_ss=r) is specifically built for the XD75)
-* Switches (the XD75re uses MX-style switches, sold by many vendors like [FlashQuark](https://flashquark.com/product-category/switches/))
+* Switches (the XD75re uses MX switches, sold by [NovelKeys](https://novelkeys.xyz/collections/switches), [FlashQuark](https://flashquark.com/product-category/switches/), many others)
 * Keycaps (you'll need uniform-profile MX keycaps with all 1u sizes, like [this](https://kprepublic.com/products/dsa-pbt-top-printed-legends-white-blue-keycaps-laser-etched-gh60-poker2-xd64-87-104-xd75-xd96-xd84-cosair-k70-razer-blackwidow?_pos=6&_sid=ce2218b96&_ss=r&variant=1410114584620))
 * Plate (sometimes optional, the case linked above has a built-in plate)
 * Cable (the XD75re uses a USB C cable)
