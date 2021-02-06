@@ -66,7 +66,9 @@ If you're interested in trying an ortholinear layout, I would suggest trying a k
 
 ### Building a keyboard from scratch
 
-The only downside with the XD75re is that it does not come as a prebuilt keyboard, you'll need to source your own parts and assemble it yourself. Fortunately, this is all a lot easier than it sounds, because the XD75re board has all components already soldered on it. This means all you need to do is purchase the right parts and put it all together, no wiring or soldering necessary! This video does a good job of breaking down all the possibilities when it comes to building your own mechanical keyboard:
+The only downside with the XD75re is that it does not come as a prebuilt keyboard, you'll need to source your own parts and assemble it yourself. Fortunately, this is all a lot easier than it sounds, because the XD75re board has all components already soldered on it. This means all you need to do is purchase the right parts and put it all together, no wiring or soldering necessary! 
+
+This video by [Taeha Types](https://www.youtube.com/channel/UCMHXMAeKkI6HXlPfLiYvo9g) does a good job of breaking down all the possibilities when it comes to building your own mechanical keyboard:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/1NpNygIrnaQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -91,7 +93,7 @@ The total cost of this build will be somewhere between 100 and 200 USD. Which is
 
 ### Customizing the keyboard firmware
 
-The XD75re can be customized using the [QMK firmware](https://docs.qmk.fm), which is an open source keyboard firmware project that enables complete customization of your keyboard. If you are a programmer, you can write custom C code to program your keyboard down to each keypress. If you are not a programmer, no worries - they provide an online graphical configuration tool which is much more user friendly:
+The XD75re can be customized using the [QMK firmware](https://docs.qmk.fm), which is an open source keyboard firmware project that enables complete customization of your keyboard. If you are a programmer, you can write custom C code to program your keyboard down to each keypress. If you are not a programmer, no worries - they provide an online graphical configuration tool which is much more user friendly. This tutorial by [MechMerlin](https://www.youtube.com/channel/UCdfrYMwAJ8LHvy8-j_WIxAw) walks you through every step:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/-imgglzDMdY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
