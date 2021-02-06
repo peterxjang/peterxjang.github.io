@@ -1,7 +1,7 @@
 ---
 title: Your First Custom Ortholinear Keyboard
 description: >-
-  Everything you need to know to build a custom ortholinear keyboard
+  Everything you need to know about why and how to build a custom ortholinear keyboard!
 image: /img/xd75re.jpg
 date: 2021-02-05
 categories: []
