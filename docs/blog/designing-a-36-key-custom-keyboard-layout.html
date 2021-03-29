@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Designing a 36-key custom keyboard layout</title>
+    <meta name="description" content="My thought process on making an ergonomic keyboard layout with minimal key travel and minimal learning curve">
+
+    
+    <meta name="og:title" content="Designing a 36-key custom keyboard layout">
+    <meta name="og:description" content="My thought process on making an ergonomic keyboard layout with minimal key travel and minimal learning curve">
+    <meta name="og:image" content="https://peterxjang.com/img/gergoplex.jpg">
+    <meta name="og:url" content="https://peterxjang.com/blog">
+    <meta name="twitter:card" content="summary_large_image">
+    
+
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/prism-base16-monokai.dark.css">
+    <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="peterxjang">
+    <link rel="alternate" href="/feed/feed.json" type="application/json" title="peterxjang">
+  </head>
+  <body>
+    <header class="sticky">
+      <ul class="nav">
+      
+        <li class="nav-item"><a href="/"><strong>peterxjang</strong></a></li>
+        <li class="nav-item"><a href="/blog/">blog</a></li>
+        <li class="nav-item" style="margin-left: auto">
+          <a target="_blank" rel="noopener noreferrer me" href="https://twitter.com/peterxjang" aria-label="Twitter">
+            <svg class="nav-icon" viewBox="0 0 29 29"><path d="M22.05 7.54a4.47 4.47 0 0 0-3.3-1.46 4.53 4.53 0 0 0-4.53 4.53c0 .35.04.7.08 1.05A12.9 12.9 0 0 1 5 6.89a5.1 5.1 0 0 0-.65 2.26c.03 1.6.83 2.99 2.02 3.79a4.3 4.3 0 0 1-2.02-.57v.08a4.55 4.55 0 0 0 3.63 4.44c-.4.08-.8.13-1.21.16l-.81-.08a4.54 4.54 0 0 0 4.2 3.15 9.56 9.56 0 0 1-5.66 1.94l-1.05-.08c2 1.27 4.38 2.02 6.94 2.02 8.3 0 12.86-6.9 12.84-12.85.02-.24 0-.43 0-.65a8.68 8.68 0 0 0 2.26-2.34c-.82.38-1.7.62-2.6.72a4.37 4.37 0 0 0 1.95-2.51c-.84.53-1.81.9-2.83 1.13z"></path></svg>
+          </a>
+        </li>
+        <li class="nav-item"">
+          <a target="_blank" rel="noopener noreferrer me" href="https://github.com/peterxjang" aria-label="GitHub">
+            <svg class="nav-icon" viewBox="-8 -5 34 34"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"></path></svg>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a target="_blank" rel="noopener noreferrer me" href="https://linkedin.com/in/peterxjang" aria-label="LinkedIn">
+            <svg class="nav-icon" viewBox="0 0 29 29"><path d="M5 6.36C5 5.61 5.63 5 6.4 5h16.2c.77 0 1.4.61 1.4 1.36v16.28c0 .75-.63 1.36-1.4 1.36H6.4c-.77 0-1.4-.6-1.4-1.36V6.36z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M10.76 20.9v-8.57H7.89v8.58h2.87zm-1.44-9.75c1 0 1.63-.65 1.63-1.48-.02-.84-.62-1.48-1.6-1.48-.99 0-1.63.64-1.63 1.48 0 .83.62 1.48 1.59 1.48h.01zM12.35 20.9h2.87v-4.79c0-.25.02-.5.1-.7.2-.5.67-1.04 1.46-1.04 1.04 0 1.46.8 1.46 1.95v4.59h2.87v-4.92c0-2.64-1.42-3.87-3.3-3.87-1.55 0-2.23.86-2.61 1.45h.02v-1.24h-2.87c.04.8 0 8.58 0 8.58z" fill="#fff"></path></svg>
+          </a>
+        </li>
+      </ul>
+    </header>
+
+    <main class="tmpl-post">
+      <div class="post-title">
+  <h1>Designing a 36-key custom keyboard layout</h1>
+  <time class="postlist-date" datetime="2021-03-29">29 Mar 2021</time>
+</div>
+
+<p><img src="/img/gergoplex.jpg" alt="GergoPlex keyboard"><br>
+<em>GergoPlex keyboard by <a href="https://www.gboards.ca/product/gergoplex">g Heavy Industries</a></em></p>
+<h2 id="background">Background <a class="direct-link" href="#background">#</a></h2>
+<p>Once you get into the world of <a href="your-first-custom-ortholinear-keyboard.html">custom mechanical keyboards</a>, then you'll eventually run into keyboards with what looks like an impossibly small number of keys:</p>
+<p><img src="/img/small-keyboard-collection.jpg#medium" alt="Small keyboard collection"><br>
+<em>Ergonomic keyboard collection by <a href="https://www.reddit.com/user/chamzter22/">u/chamzter22</a> from <a href="https://www.reddit.com/r/ErgoMechKeyboards/comments/mcwklj/teeny_weeny//">r/ErgoMechKeyboards</a></em></p>
+<p>At first it may seem there is no good reason to build a keyboard like this, other than for aesthetic purposes or bragging rights. However, there are valid arguments to be made for reducing the number of keys on a standard keyboard. If you've ever tried to learn touch typing, then you were taught the importance of keeping your fingers on the home row. Yet there are many keys that force your hand to move off the home row. Even the number row can be hard to reach for people with smaller hands.</p>
+<p>Here's the layout of a typical 78-key Mac keyboard, with the home row highlighted in green and all the keys that can take you off the home row highlighted in red:</p>
+<p><img src="/img/apple-magic-keyboard-annotated.jpg#medium" alt="Apple magic keyboard"></p>
+<p>Your mileage may vary depending on how long your fingers are, but there certainly a surprising number of important keys that require a significant stretch. This is why many ergonomic keyboards are designed with fewer keys, from the 48-key ortholinear <a href="https://olkb.com/collections/planck">Planck</a>, to the 42-key split columnar <a href="https://github.com/foostan/crkbd">Corne</a>, to the 36-key split columnar <a href="https://www.gboards.ca/product/gergoplex">GergoPlex</a>. (You can of course design a keyboard with even fewer keys, but I would argue 36 keys is about the limit for a normal typing experience using the English alphabet.)</p>
+<p>So what happens to all the keys that you lose with these smaller keyboards? The answer is to use custom keyboard firmware with layers. In same way you can hold the Shift key to access special keys keys like !, @, #, etc., you can create custom layers to access those missing keys. This does require you to memorize a whole set of inputs and potentially relearn years of muscle memory. However, it is possible to design a layout that minimizes this learning curve by following a set of principles, which we'll look into next.</p>
+<h2 id="prior-art">Prior art <a class="direct-link" href="#prior-art">#</a></h2>
+<p>If you're looking for a 36-key custom keyboard layout, a commonly recommended one that I've come across is the <a href="https://github.com/manna-harbour/miryoku">Miryoku layout</a>:</p>
+<p><img src="/img/miryoku-layout.png#medium" alt="Miryoku keyboard layout"></p>
+<p>That looks intense! Each thumb key activates a different layer for a total of 6 layers, so there's a lot to get used to. Furthermore, the Miryoku layout uses home row mods - the Super, Alt, Ctrl, and Shift keys are on the home row instead of the thumb keys. For example, if you hold down the T key, it will work as the Shift modifier. If you tap it instead, the letter T will output instead. This definitely makes sense in theory, as your fingers are always on the home row. In practice, it'll take some tweaking to get it to work well, as there can be timing issues where sometimes you want the modifier to activate, sometimes you want the letter to activate. <a href="https://precondition.github.io/home-row-mods">This article</a> goes over home row mods and the necessary tweaks to make it work well in meticulous detail.</p>
+<p>Another alternative to managing the available keys is to use <a href="https://beta.docs.qmk.fm/using-qmk/software-features/feature_combo">combos</a>:</p>
+<p><img src="/img/gergoplex-layout.png#medium" alt="GergoPlex default layout"></p>
+<p>This is the default layout of the GergoPlex keyboard, described in detail <a href="https://blog.gboards.ca/2020/01/weird-keyboards-programmable-keyboards.html">here</a>. Instead of using many different layers, this layout uses combo keys to activate different symbols. For example, pressing S and D simultaneously will trigger a Backspace, pressing J and K together will trigger a colon, etc. This provides a lot of interesting opportunities; however, there can be timing issues similar to home row mods. Also, pressing combos can be tiring if you happen to use heavy key switches.</p>
+<p>In order to build these types of layouts, you'll need to program your own keyboard firmware. A popular open source keyboard firmware project is <a href="https://qmk.fm/">QMK</a>, which allows you to program layers, combos, and many more features that enable you to map all the keys necessary to a 36-key custom keyboard. (You can get an overview of how to use QMK in my previous <a href="your-first-custom-ortholinear-keyboard.html">article</a>.)</p>
+<h2 id="my-design-constraints">My design constraints <a class="direct-link" href="#my-design-constraints">#</a></h2>
+<p>Many people have found success with variations of the layouts described above. However, they didn't fit my particular needs, so I wanted to design something from scratch. Basically, I want to be able to switch between my 36-key custom keyboard and my normal laptop keyboard without issue. This doesn't seem to be a problem for some people, but for me, I noticed that I made a lot of mistakes reaching for the wrong keys when I switched between these different layouts. Keeping that in mind, these were the design constraints I used for my keyboard layout:</p>
+<h4 id="avoid-relocating-keys-whenever-possible">Avoid relocating keys whenever possible <a class="direct-link" href="#avoid-relocating-keys-whenever-possible">#</a></h4>
+<p>I found this to be essential if I wanted to switch between my custom layout and a standard keyboard. Many people redesign their layouts completely, using <a href="https://en.wikipedia.org/wiki/Dvorak_keyboard_layout">Dvorak</a>, <a href="https://en.wikipedia.org/wiki/Colemak">Colemak</a>, or other non-QWERTY layouts. Which makes sense if your goal is to optimize ergonomics as much as possible. But that's not my goal - to me, reducing the key distance from the home row is ergonomic enough. My goal is to optimize other factors, namely minimizing the learning curve and minimizing the difficulty switching to a standard keyboard.</p>
+<h4 id="keep-any-relocated-keys-on-the-same-side-they-came-from">Keep any relocated keys on the same side they came from <a class="direct-link" href="#keep-any-relocated-keys-on-the-same-side-they-came-from">#</a></h4>
+<p>What this means is that the Escape key, which has to be relocated on a 36-key custom keyboard, will stay on the left side of the keyboard, the Enter key will stay on the right side of the keyboard, etc. This helps avoid any conflicts with keyboard shortcuts that involve two different hands (for example, Command Enter, which normally uses two different hands, would be difficult to execute if the Enter key was moved on the same hand as Command). I think this also helps with muscle memory, at least when I was experimenting. I tried moving the Tab key to the right hand, and my brain wan't having it - moving it back to the left hand felt way more intuitive, even though it was a different position than normal. Again, your mileage may vary.</p>
+<h4 id="avoid-overloading-commonly-used-letter-keys">Avoid overloading commonly used letter keys <a class="direct-link" href="#avoid-overloading-commonly-used-letter-keys">#</a></h4>
+<p>When making custom keyboard firmware, you can program any single key to have multiple functions. The A key can be programmed to send A when tapped, send Control when held, send Tab when double-tapped, etc. This is an essential part of making a 36-key custom keyboard feasible. However, certain keys work better than others. Overloading the A key as in this example can cause errors when you type quickly - when you type &quot;as&quot;, it may register as Control-S or &quot;as&quot; depending on how quickly you release the A key. You can tweak the firmware timings, but I'd rather avoid the issue altogether by not overloading these commonly used letter keys if at all possible.</p>
+<h4 id="minimize-the-number-of-layers">Minimize the number of layers <a class="direct-link" href="#minimize-the-number-of-layers">#</a></h4>
+<p>Some people find it effective to have many different layers, each with specific responsibilities. I tried this, but it didn't click for me to learn all these layers up front. Instead of making many single-purpose layers, I was able to make a single additional layer that contained all the commonly used symbols and navigation keys that didn't fit on the base layer. This made it easy for me to learn, as it helps you avoid having to remember what key was in which layer and activating the appropriate layer each time. Once you get used to a layout, it can definitely make sense to add additional layers, but this is a good constraint to start with in my experience.</p>
+<h4 id="use-mnemonic-devices-for-positioning-layer-keys">Use mnemonic devices for positioning layer keys <a class="direct-link" href="#use-mnemonic-devices-for-positioning-layer-keys">#</a></h4>
+<p>There are 78 keys on the standard Mac keyboard pictured above. That means for a 36-key custom keyboard, you need to memorize the positions of 42 keys that don't fit on the base layer. That's a daunting task, unless you have some mnemonic devices to aid your memory. For example, many layouts I've seen have the number keys rearranged to a <a href="https://en.wikipedia.org/wiki/Numeric_keypad">numpad</a> style formation. This is pretty cool, but it's more stuff to memorize up front. It's easier to start with the number keys in a layer directly across the top row, which is just one row down from where they are normally located. Similarly, the F1-F10 keys can go on a separate layer at the same positions - again, easy to memorize. Now we already have 20 out of the 42 keys taken care of with minimal effort! We can place the remaining keys in layers using similar mnemonic devices to keep the learning curve to a minimum.</p>
+<p>These design constraints eliminated a lot of arbitrary choices, and led me to a keyboard layout that I'm pretty satisfied with.</p>
+<h2 id="my-layout">My layout <a class="direct-link" href="#my-layout">#</a></h2>
+<p>Here's the layout I created for a 36-key custom keyboard using the above design constraints:</p>
+<p><img src="/img/36-key-layout.png" alt="36-key custom keyboard layout"></p>
+<p>(This layout was designed specifically for Mac modifier keys, but it shouldn't be hard to adjust for Windows or Linux.) Nearly every key towards the middle of a standard keyboard are kept at their original positions. All relocated keys stay on the same hand. The layout doesn't overload any commonly used letter keys. There are only 2 additional layers (and all the commonly used symbols are on the first layer). Let's look over each layer in detail.</p>
+<h4 id="the-default-base-layer">The default base layer <a class="direct-link" href="#the-default-base-layer">#</a></h4>
+<pre><code>/* Layer 0: Base keys
+ *
+ * ,-----.-----.-----.-----.-----.                      ,-----.-----.-----.-----.-----.
+ * | Q   | W   | E   | R   | T   |                      | Y   | U   | I   | O   | P   |
+ * |-----+-----+-----+-----+-----|                      |-----+-----+-----+-----+-----|
+ * | A   | S   | D   | F   | G   |                      | H   | J   | K   | L   | ' &quot; | 
+ * |-----+-----+-----+-----+-----+                      |-----+-----+-----+-----+-----|
+ * |SHF/Z| X   | C   | V   | B   |                      | N   | M   | &lt; , | &gt; . |SHF/?|
+ * `-----'-----'-----'-----'-----'                      `-----'-----'-----'-----'-----'
+ *               .-------.-------.-------.      .-------.-------.-------.   
+ *               |OPT/ESC|  CMD  |CTR/TAB|      | ENTER |L1/SPC |L2/BSP |
+ *               '-------'-------'-------'      '-------'-------'-------' 
+ */
+</code></pre>
+<p>The base layer is nearly identical to a standard layout, with Option, Command, and Space keys in the exact same positions (I happen to use my right thumb to hit space, but you can overload the left Command key to be space if you do the opposite). The Shift keys are in approximately similar positions (overloading infrequently typed letters, which works out perfectly). I did replace the semicolon key with the quotes key, because it is so frequently used, but this is an optional modification.</p>
+<p>The Escape and Tab keys had to be relocated, so they now controlled by the left thumb. Same with the Enter and Backspace keys for the right thumb. Using your thumbs for these keys is a downright liberating experience. Those keys are used constantly throughout any work session, and you don't realize just how much your hands have to move hitting those keys until you bring them to a more usable position.</p>
+<p>There is one downside to this layout - with the Tab key next to the Command key, it's difficult to hit Command Tab, an essential keyboard shortcut on a Mac. We'll come back to this at the end.</p>
+<h4 id="the-symbols-layer">The symbols layer <a class="direct-link" href="#the-symbols-layer">#</a></h4>
+<pre><code>/* Layer 1: Symbols
+ * ,-----.-----.-----.-----.-----.                      ,-----.-----.-----.-----.-----.
+ * | 1!  | 2@  | 3#  | 4$  | 5%  |                      | 6^  | 7&amp;  | 8*  | 9(  | 0)  |
+ * |-----+-----+-----+-----+-----|                      |-----+-----+-----+-----+-----|
+ * | `~  |HOME |PGUP |PGDN | END |                      |LEFT |DOWN | UP  |RGHT | ;:  |
+ * |-----+-----+-----+-----+-----+                      |-----+-----+-----+-----+-----|
+ * |SHFT |     |     |     |     |                      | -_  | =+  | [{  | ]}  |SHF\||
+ * `-----'-----'-----'-----'-----'                      `-----'-----'-----'-----'-----'
+ *               .-------.-------.-------.      .-------.-------.-------.   
+ *               |       |       |       |      |       |(hold) |       |
+ *               '-------'-------'-------'      '-------'-------'-------' 
+ */
+</code></pre>
+<p>This layer is activated by holding down the right thumb middle key. Every commonly used symbol, including numbers and arrow keys, are on this layer. Most layouts I've seen have a separate layer for numbers and symbols. This seems to work for most people, but when I personally tried this, it messed with my head too much. I'm used to holding shift to get an !, which is how this layout works. Keeping my muscle memory and reducing the number of necessary layers is a win-win in my book.</p>
+<p>I have Vim-style arrow keys here on the right hand home row, which is what I'm used to. If you're already comfortable with Vim, this is a great layout; if not, you may need to make some modifications (or spend some time <a href="how-to-learn-vim-a-four-week-plan.html">learning Vim</a> if you're so inclined). You can optionally add HOME/END/PGDN/PGUP keys on the left hand - these are less crucial, so experiment with rearranging them to something that makes sense for you.</p>
+<p>The biggest learning curve is getting used to the remaining symbols that lost their dedicated keys (<code>-_</code>, <code>=+</code>, <code>[{</code>, <code>}]</code>, and <code>\|</code>). I basically moved this cluster of keys to the bottom row of the right hand in order. The easiest way to remember this is to use some mental anchors. The open <code>[{</code> key is at the same position as the base layer open <code>&lt;,</code> key, and the close <code>}]</code> key is at the same position as the base layer close <code>&gt;.</code> key. Also, the backslash <code>\|</code> key is at the same position as the base layer forward slash <code>/?</code> key. If you can remember those, then the only two left are the <code>-_</code> and <code>=+</code> keys at the remaining two positions. Again, you access the shifted versions of each of these keys by holding on shift as you would normally, so nothing new to remember there!</p>
+<h4 id="the-function-layer">The function layer <a class="direct-link" href="#the-function-layer">#</a></h4>
+<pre><code>/* Layer 2: Function keys
+* ,-----.-----.-----.-----.-----.                      ,-----.-----.-----.-----.-----.
+* | F1  | F2  | F3  | F4  | F5  |                      | F6  | F7  | F8  | F9  | F10 |
+* |-----+-----+-----+-----+-----|                      |-----+-----+-----+-----+-----|
+* | F11 | F12 |PREV |PLAY |NEXT |                      |MUTE |Vol- |Vol+ | Br- | Br+ |
+* |-----+-----+-----+-----+-----+                      |-----+-----+-----+-----+-----|
+* |     |     |     |     |     |                      |     |     |     |     |     |
+* `-----'-----'-----'-----'-----'                      `-----'-----'-----'-----'-----'
+*               .-------.-------.-------.      .-------.-------.-------.   
+*               |       |       |       |      |       |       |(hold) |
+*               '-----------------------'      '-------'-------'-------' 
+*/
+</code></pre>
+<p>This layer is activated by holding down the right thumb right key. I use this layer far less frequently than the symbols layer, but every function key is accounted for with room to spare. It's easy to remember the function key positions, as they are mentally anchored to the number key positions. You can optionally add volume controls, brightness controls, media keys, and any other miscellaneous keys as well - there's plenty of room.</p>
+<h3 id="custom-code">Custom code <a class="direct-link" href="#custom-code">#</a></h3>
+<p>I mentioned earlier that the only downside I found to the base layer was the difficulty in hitting Command Tab, which is a critical keyboard shortcut on the Mac. My solution to this is an odd one - I overwrote the keyboard shortcut to Command Q to be Command Tab instead, at a firmware level. It's worth mentioning that even before I started making this keyboard layout, I had <a href="https://superuser.com/questions/222440/how-to-disable-command-q-for-terminal-on-osx">disabled Command Q</a> on my Mac (I was tired of accidentally quitting a program and losing all my tabs went I meant to enter Command W). So I didn't need this keyboard shortcut, and it is the closest physical location to Command Tab on a normal keyboard layout.</p>
+<p>Here's the code to overwrite Command Q to be Command Tab <a href="https://beta.docs.qmk.fm/using-qmk/guides/custom_quantum_functions#programming-the-behavior-of-any-keycode-id-programming-the-behavior-of-any-keycode">using QMK</a> if you're curious:</p>
+<pre class="language-c"><code class="language-c">bool <span class="token function">process_record_user</span><span class="token punctuation">(</span>uint16_t keycode<span class="token punctuation">,</span> keyrecord_t <span class="token operator">*</span>record<span class="token punctuation">)</span> <span class="token punctuation">{</span><br>  <span class="token keyword">switch</span> <span class="token punctuation">(</span>keycode<span class="token punctuation">)</span> <span class="token punctuation">{</span><br>  <span class="token keyword">case</span> KC_Q<span class="token operator">:</span><br>    <span class="token keyword">if</span> <span class="token punctuation">(</span>record<span class="token operator">-></span>event<span class="token punctuation">.</span>pressed<span class="token punctuation">)</span> <span class="token punctuation">{</span><br>      <span class="token keyword">if</span> <span class="token punctuation">(</span>keyboard_report<span class="token operator">-></span>mods <span class="token operator">&amp;</span> <span class="token function">MOD_BIT</span><span class="token punctuation">(</span>KC_LCMD<span class="token punctuation">)</span> <span class="token operator">||</span> keyboard_report<span class="token operator">-></span>mods <span class="token operator">&amp;</span> <span class="token function">MOD_BIT</span><span class="token punctuation">(</span>KC_RCMD<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">{</span><br>        <span class="token function">register_code</span><span class="token punctuation">(</span>KC_TAB<span class="token punctuation">)</span><span class="token punctuation">;</span><br>        <span class="token keyword">return</span> false<span class="token punctuation">;</span><br>      <span class="token punctuation">}</span><br>    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span><br>      <span class="token keyword">if</span> <span class="token punctuation">(</span>keyboard_report<span class="token operator">-></span>mods <span class="token operator">&amp;</span> <span class="token function">MOD_BIT</span><span class="token punctuation">(</span>KC_LCMD<span class="token punctuation">)</span> <span class="token operator">||</span> keyboard_report<span class="token operator">-></span>mods <span class="token operator">&amp;</span> <span class="token function">MOD_BIT</span><span class="token punctuation">(</span>KC_RCMD<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">{</span><br>        <span class="token function">unregister_code</span><span class="token punctuation">(</span>KC_TAB<span class="token punctuation">)</span><span class="token punctuation">;</span><br>        <span class="token keyword">return</span> false<span class="token punctuation">;</span><br>      <span class="token punctuation">}</span><br>    <span class="token punctuation">}</span><br>    <span class="token keyword">break</span><span class="token punctuation">;</span><br>  <span class="token punctuation">}</span><br>  <span class="token keyword">return</span> true<span class="token punctuation">;</span><br><span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre>
+<p>To me, this is the perfect solution to my problem; however, I get that this may not be ideal for a lot of people. The good thing is that you have a lot of other options if you're using QMK. You could use <a href="https://beta.docs.qmk.fm/using-qmk/software-features/feature_tap_dance">tap dance</a> to make double-tapping Q output a Tab key, or you could make a <a href="https://beta.docs.qmk.fm/using-qmk/software-features/feature_combo">combo</a> for QW to output a Tab key, or you could put Tab on some layer that's easily accessible, etc. There are endless possibilities when programming your own keyboard firmware; just be careful to keep these types of customizations to a minimum until you get used to your basic layout.</p>
+<h3 id="next-steps">Next steps <a class="direct-link" href="#next-steps">#</a></h3>
+<p>This layout has a lot of room for further customizations. There are many unused keys on the two additional layers, and there are keys available on the base layer to activate new layers if you're so inclined (the right thumb Enter key and the right pinky semicolon key are two good options). You could assign the right thumb Enter key as a <a href="https://brettterpstra.com/2012/12/08/a-useful-caps-lock-key/">Hyper key</a> instead, which could be useful for other system-wide keyboard shortcuts.</p>
+<p>If you're just getting started in the world of custom keyboard firmware, I'd recommend reading my <a href="your-first-custom-ortholinear-keyboard.html">previous post</a> to get an overview of making a custom keyboard with programmable firmware. If you're looking to purchase a 36-key custom keyboard, there aren't too many vendors that mass produce them, as it's a pretty niche market. The <a href="https://shop.keyboard.io/products/keyboardio-atreus">Keyboardio Atreus</a> is one of the more affordable mass produced options that can fit the bill; it's got more than 36 keys, but it should work well with this layout, and you can use the extra keys as you see fit. Otherwise, you can purchase parts or prebuilt options from smaller vendors who will make it to order, which will take more time. A good place to get advice is the <a href="https://www.reddit.com/r/ErgoMechKeyboards/">/r/ErgoMechKeyboards</a> subreddit, where they have a <a href="https://www.reddit.com/r/ErgoMechKeyboards/comments/l09rbd/what_keyboard_should_i_use/">sticky</a> to help you find the exact keyboard that meets your needs.</p>
+<p>If after reading all this, you're not convinced it's worth it to switch to a 36-key custom keyboard, then I would definitely stick with your current preference. The ergonomics are a definite plus for some people who experience wrist or joint pain, but for most people this is probably not an issue. I would recommend getting into ergonomic keyboards the same way I would recommend someone to <a href="how-to-learn-vim-a-four-week-plan.html">learn Vim</a>; it should be because you enjoy spending time learning and mastering a complex skill, like learning a new musical instrument.</p>
+<p>If you're already using a small keyboard with minimal keys, it's worth restating that I don't believe my layout is the best layout for everyone. If you've spent the time to master non-QWERTY layouts, home row mods, combos, or other advanced features, then you should use a layout that takes full advantage of your knowledge. But I do believe this layout is ideal as a starting point for most people, as it gives you the ability to be productive in the shortest amount of time. Once you feel comfortable with this layout, then you should definitely add more features incrementally, which is half the fun of building your own keyboard. Hope you find these tips useful on your journey!</p>
+
+
+<hr>
+<ul class="post-navigation"><li>Previous: <a href="/blog/your-first-custom-ortholinear-keyboard.html">Your First Custom Ortholinear Keyboard</a></li>
+  <li>Back to <a href="/blog/">all posts</a></li>
+</ul>
+
+    </main>
+
+    <footer>
+      <div>
+        <img class="avatar" src="/img/avatar_square.jpg" alt="Profile picture of Peter Jang">
+        <h4>Peter Jang</h4>
+        <p>Hi! My name is Peter Jang, I'm an educator and software developer by trade (3rd Strike Ken main and amateur karaoke beast by hobby). I'm currently the Dean of Instruction at <a target="_blank" rel="noopener noreferrer me" href="https://actualize.co">Actualize</a>, where I design the web development curriculum and teach live classes at our Chicago main campus. This is my personal website where I write about programming and other technology-related topics.</p>
+        <p>Follow me @peterxjang: <a target="_blank" rel="noopener noreferrer me" href="https://twitter.com/peterxjang">twitter</a>, <a target="_blank" rel="noopener noreferrer me" href="https://github.com/peterxjang">github</a>, <a target="_blank" rel="noopener noreferrer me" href="https://linkedin.com/in/peterxjang">linkedin</a></p>
+        <p>Subscribe to my blog: <a href="/feed/feed.xml">rss</a></p>
+      </div>
+    </footer>
+
+    <!-- Current page: /blog/designing-a-36-key-custom-keyboard-layout.html -->
+  </body>
+</html>
