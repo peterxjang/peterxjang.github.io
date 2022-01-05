@@ -390,7 +390,7 @@ methods: {
     if (index !== -1) {
       this.notes.splice(index, 1);
       if (this.transformedNotes.length > 0) {
-        this.selectedNote = this.transformedNotes\[0\];
+        this.selectedNote = this.transformedNotes[0];
       } else {
         this.selectedNote = {};
       }
@@ -456,7 +456,7 @@ watch: {
     if (this.transformedNotes.length === 0) {
       this.selectedNote = {};
     } else if (this.transformedNotes.indexOf(this.selectedNote) === -1) {
-      this.selectedNote = this.transformedNotes\[0\];
+      this.selectedNote = this.transformedNotes[0];
     }
   }
 }
