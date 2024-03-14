@@ -33,7 +33,7 @@ Let’s start with an “old-school” website using HTML and JavaScript, which 
 <head>  
   <meta charset="UTF-8">  
   <title>JavaScript Example</title>  
-  **<script src="index.js"></script>**  
+  <script src="index.js"></script>
 </head>  
 <body>  
   <h1>Hello from HTML!</h1>  
@@ -229,9 +229,9 @@ Now we have webpack and webpack-cli installed as packages in the **`node_modules
 $ ./node_modules/.bin/webpack index.js --mode=development
 ```
 
-This command will run the webpack tool that was installed in the **`node_modules`** folder, start with the **`index.js`** file, find any `require` statements, and replace them with the appropriate code to create a single output file (which by default is `**dist/main.js**`). The `--mode=development` argument is to keep the JavaScript readable for developers, as opposed to a minified output with the argument `--mode=production`.
+This command will run the webpack tool that was installed in the **`node_modules`** folder, start with the **`index.js`** file, find any `require` statements, and replace them with the appropriate code to create a single output file (which by default is **`dist/main.js`**). The `--mode=development` argument is to keep the JavaScript readable for developers, as opposed to a minified output with the argument `--mode=production`.
 
-Now that we have webpack’s `**dist/main.js**` output, we are going to use it instead of **`index.js`** in the browser, as it contains invalid require statements. This would be reflected in the **`index.html`** file as follows:
+Now that we have webpack’s **`dist/main.js`** output, we are going to use it instead of **`index.js`** in the browser, as it contains invalid require statements. This would be reflected in the **`index.html`** file as follows:
 
 ```html/6/
 <!-- index.html -->  
@@ -350,7 +350,7 @@ In this example, the `import` syntax isn’t much different from the `require` s
 $ ./node_modules/.bin/webpack
 ```
 
-Now you can refresh **`index.html`** in the browser. At the time of this writing, most modern browsers support all ES2015 features, so it can be hard to tell if babel did its job. You can test it in an older browser like IE9, or you can search in `**main.js**` to find the line of transpiled code:
+Now you can refresh **`index.html`** in the browser. At the time of this writing, most modern browsers support all ES2015 features, so it can be hard to tell if babel did its job. You can test it in an older browser like IE9, or you can search in **`main.js`** to find the line of transpiled code:
 
 ```js
 // main.js  
